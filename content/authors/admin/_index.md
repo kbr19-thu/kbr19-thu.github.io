@@ -42,10 +42,10 @@ education:
     #   year: 08/2024-now
     - course: PhD in Civil Engineering (Quit)
       institution: Tsinghua University(THU)
-      year: 09/2023-01/2024
+      year: 09/2023 - 01/2024
     - course: BEng in Civil Engineering
       institution: Tsinghua University(THU)
-      year: 08/2019-06/2023
+      year: 08/2019 - 06/2023
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -95,12 +95,12 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: false
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/GeorgeCushen
+  #   label: Follow me on Twitter
+  #   display:
+  #     header: ture
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
     link: https://scholar.google.com/citations?hl=en&user=IvujOgYAAAAJ
@@ -115,7 +115,7 @@ social:
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: uploads/resume.pdf
+    link: uploads/Borui_Kang_CV.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
