@@ -29,21 +29,22 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 # Interests to show in About widget
 interests:
+  - Medical Image Processing
+  - Computer Vision
+  - Deep Learning
   - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
+    # - course: PhD in Artificial Intelligence
+    #   institution: National University of Singapore
+    #   year: 2024-now
+    - course: PhD in Civil Engineering (Quit)
+      institution: Tsinghua University(THU)
+      year: 09/2023-01/2024
     - course: BEng in Civil Engineering
-      institution: Tsinghua University
+      institution: Tsinghua University(THU)
       year: 2019-2023
 
 # Skills
