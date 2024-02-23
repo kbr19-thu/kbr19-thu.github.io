@@ -25,7 +25,7 @@ organizations:
     url: https://www.tsinghua.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include medical image processing, computer vision and other deep learning techniques.
 
 # Interests to show in About widget
 interests:
@@ -39,13 +39,13 @@ education:
   courses:
     # - course: PhD in Artificial Intelligence
     #   institution: National University of Singapore
-    #   year: 2024-now
+    #   year: 08/2024-now
     - course: PhD in Civil Engineering (Quit)
       institution: Tsinghua University(THU)
       year: 09/2023-01/2024
     - course: BEng in Civil Engineering
       institution: Tsinghua University(THU)
-      year: 2019-2023
+      year: 08/2019-06/2023
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
