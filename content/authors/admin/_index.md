@@ -121,5 +121,5 @@ social:
 highlight_name: true
 ---
 
-I am a gap-year student applying for PhD position in artificial intelligence. My research interests mainly include medical image processing, computer vision and other deep learning techniques. I received the B.Eng. degree in Civil Engineering from Tsinghua University, Beijing, China in 2023, supervised by Assistant Professor Chen GU in THU. After that, I continued to pursue a doctoral degree in Civil Engineering under the supervision of Prof. GU, and quited in January 2024.
+I am a gap-year student applying for PhD position in artificial intelligence. My research interests mainly include medical image processing, computer vision and other deep learning techniques. I received the B.Eng. degree in Civil Engineering from Tsinghua University, Beijing, China in 2023, supervised by Assistant Professor Chen GU in THU. After that, I continued to pursue a doctoral degree in Civil Engineering supervised by Prof. GU in THU, and quited in January 2024.
 {style="text-align: justify;"}
