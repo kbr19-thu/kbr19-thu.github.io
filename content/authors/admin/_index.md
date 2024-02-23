@@ -1,9 +1,9 @@
 ---
 # Display name
-title: 康博睿
+title: Borui Kang
 
 # Name pronunciation (optional)
-name_pronunciation: Borui Kang
+# name_pronunciation: Borui Kang
 
 # Full name (for SEO)
 first_name: Borui
@@ -21,7 +21,7 @@ role: B.Eng. of Civil Engineering # PhD Student of Artificial Intelligence # PhD
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Tsinghua University
+  - name: Tsinghua University(THU)
     url: https://www.tsinghua.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
