@@ -11,8 +11,6 @@ appearance:
   # font: minimal
   font: native
   font_size: L
-  mode: light
-  color: blue
 # SEO
 
 marketing:
