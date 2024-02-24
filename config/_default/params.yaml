@@ -11,6 +11,7 @@ appearance:
   # font: minimal
   font: native
   font_size: L
+  color: cyan
 # SEO
 
 marketing:
