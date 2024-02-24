@@ -11,8 +11,8 @@ appearance:
   # font: minimal
   font: native
   font_size: L
-  # mode: system
-  color: blue
+  mode: system
+  color: cyan
 # SEO
 
 marketing:
