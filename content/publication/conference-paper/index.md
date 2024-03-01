@@ -13,9 +13,9 @@ authors:
   - Jiarui Lin
 
 # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+# author_notes:
+#   - 'Equal contribution'
+#   - 'Equal contribution'
 
 date: '2023-08-29T00:00:00Z'
 doi: ''
