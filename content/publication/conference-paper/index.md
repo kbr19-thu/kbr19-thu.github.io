@@ -13,7 +13,7 @@ authors:
   - Jiarui Lin
 
 # Author notes (optional)
-# author_notes:
+author_notes:
 #   - 'Equal contribution'
 #   - 'Equal contribution'
 
