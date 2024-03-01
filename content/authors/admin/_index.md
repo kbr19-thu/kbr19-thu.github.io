@@ -39,7 +39,10 @@ education:
   courses:
     # - course: PhD in Artificial Intelligence
     #   institution: National University of Singapore
-    #   year: 08/2024-now
+    #   year: 08/2024 - now
+    - course: Research Assistant
+      institution: Tsinghua University(THU)
+      year: 03/2024 - now
     - course: PhD in Civil Engineering (Quit)
       institution: Tsinghua University(THU)
       year: 09/2023 - 01/2024
