@@ -41,7 +41,7 @@ education:
     #   institution: National University of Singapore
     #   year: 08/2024 - now
     - course: Research Assistant
-      institution: Tsinghua University(THU)
+      institution: STRUCT(Spatial and Temporal Restoration, Understanding and Compression Team),Wangxuan Institute of Computer Technology, Peking University(PKU)
       year: 03/2024 - now
     - course: PhD in Civil Engineering (Quit)
       institution: Tsinghua University(THU)
