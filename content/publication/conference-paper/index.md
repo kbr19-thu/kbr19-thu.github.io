@@ -1,12 +1,16 @@
 ---
-title: 'An example conference paper'
+title: 'Text Mining-Based Patent Analysis for Automated Rule Checking in AEC'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - Zhe Zheng
   - admin
-  - Robert Ford
+  - Qitian Yuan
+  - Yucheng Zhou
+  - Xinzheng Lu
+  - Jiarui Lin
 
 # Author notes (optional)
 author_notes:
