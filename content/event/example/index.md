@@ -61,7 +61,7 @@ projects:
 ---
 
 {{% callout note %}}
-Please download the **PDF** to find the whole poster and content.1111111
+Please download the **PDF** to find the whole poster and content.
 {{% /callout %}}
 
 <!-- Slides can be added in a few ways:
