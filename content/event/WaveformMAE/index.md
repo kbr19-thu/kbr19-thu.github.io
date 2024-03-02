@@ -4,7 +4,7 @@ title: 'WaveformMAE: Self-Supervised Learning for Fault-Inversion-Free Reconstru
 event: AGU 2023 Annual Meeting
 event_url: https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1409667
 
-location: Moscone Center, South, Poster Hall A-C
+location: Moscone Center, South, Poster Hall A-C, S31F-0409
 address:
   street: 747 Howard St
   city: San Francisco
@@ -40,7 +40,7 @@ image:
 #     name: Follow
 #     url: https://twitter.com/georgecushen
 url_code: ''
-url_pdf: './AGU-Poster-KBR.pdf'
+url_pdf: '.content/event/WaveformMAE/AGU_Poster-KBR.pdf'
 url_slides: ''
 url_video: ''
 
