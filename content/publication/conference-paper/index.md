@@ -90,5 +90,5 @@ Create your slides in Markdown - click the _Slides_ button to check out the exam
 Please download the PDF to view the full text.
 {{% /callout %}}
 
-This work was done in my third year of undergraduate period in Tsinghua University, supervised by Dr. Zhe Zheng and Researcher Jiarui Lin.
+This work was done in my third year of undergraduate period in Tsinghua University, supervised by Dr. Zhe Zheng and Researcher [Jiarui Lin](https://linjiarui.net/).
 <!-- Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
