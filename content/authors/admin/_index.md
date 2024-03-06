@@ -40,8 +40,8 @@ education:
     # - course: PhD in Artificial Intelligence
     #   institution: National University of Singapore
     #   year: 08/2024 - now
-    - course: Research Assistant
-      institution: STRUCT(Spatial and Temporal Restoration, Understanding and Compression Team),Wangxuan Institute of Computer Technology, Peking University(PKU)
+    - course: Research Intern
+      institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University(PKU)
       year: 03/2024 - now
     - course: PhD in Civil Engineering (Quit)
       institution: Tsinghua University(THU)
