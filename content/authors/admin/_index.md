@@ -43,10 +43,10 @@ education:
       institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University (PKU)
       year: 03/2024 - 
     - course: PhD in Civil Engineering (Quit)
-      institution: Tsinghua University (THU)
+      institution: Institute of Disaster Prevention and Mitigation Engineering (IDPME), Department of Civil Engineering, Tsinghua University (THU)
       year: 09/2023 - 01/2024
     - course: BEng in Civil Engineering
-      institution: Tsinghua University (THU)
+      institution: Department of Civil Engineering, Tsinghua University (THU)
       year: 08/2019 - 06/2023
 
 # Skills
