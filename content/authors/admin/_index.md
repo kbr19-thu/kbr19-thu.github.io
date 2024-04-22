@@ -21,10 +21,10 @@ role: Research Intern (RA) # B.Eng. of Civil Engineering # PhD Student of Artifi
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  # - name: Tsinghua University (THU)
-  #   url: https://www.tsinghua.edu.cn
   - name: Peking University (PKU)
     url: https://www.pku.edu.cn
+  # - name: Tsinghua University (THU)
+  #   url: https://www.tsinghua.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests stereo vision, general computer vision and other deep learning techniques.
