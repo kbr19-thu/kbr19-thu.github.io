@@ -17,13 +17,13 @@ links:
     icon_pack: fab
     name: Follow
     url: https://twitter.com/georgecushen
-  - icon: film
+  - icon: twitter
     icon_pack: fab
     name: Slides
     link: 'content/project/example/Driving_Simulation.pdf'
 url_code: ''
 url_pdf: ''
-# url_slides: ''
+url_slides: 'content/project/example/Driving_Simulation.pdf'
 url_video: ''
 
 # Slides (optional).
