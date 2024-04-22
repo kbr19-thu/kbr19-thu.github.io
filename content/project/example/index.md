@@ -17,7 +17,7 @@ links:
     icon_pack: fab
     name: Follow
     url: https://twitter.com/georgecushen
-    - icon: 🎞️🎞
+  - icon: 🎞️🎞
     icon_pack: fab
     name: Slides
     url: './Driving_Simulation.pptx'
