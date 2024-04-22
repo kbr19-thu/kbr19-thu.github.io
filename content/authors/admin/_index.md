@@ -29,7 +29,6 @@ bio: My research interests include medical image processing, computer vision and
 
 # Interests to show in About widget
 interests:
-  - Medical Image Processing
   - Computer Vision
   - Deep Learning
   - Artificial Intelligence
