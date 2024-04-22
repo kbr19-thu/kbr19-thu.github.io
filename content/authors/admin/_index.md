@@ -45,7 +45,7 @@ education:
     #   institution: National University of Singapore
     #   year: 08/2024 - now
     - course: Research Intern (RA)
-      institution: S[TRUCT](http://39.96.165.147/struct.html), Wangxuan Institute of Computer Technology, Peking University (PKU)
+      institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University (PKU)
       year: 03/2024 - 
     - course: PhD in Civil Engineering (Quit)
       institution: Institute of Disaster Prevention and Mitigation Engineering (IDPME), Department of Civil Engineering, Tsinghua University (THU)
@@ -128,5 +128,5 @@ social:
 highlight_name: true
 ---
 
-I am a gap-year student applying for PhD position in artificial intelligence. Now I am working as a research intern (RA) supervised by Associate Prof. Jiaying Liu in Wangxuan Institute of Computer Technology, Peking University. My research interests mainly include stereo vision, general computer vision and other deep learning techniques. I received the B.Eng. degree in Civil Engineering from Tsinghua University, Beijing, China in 2023, supervised by Assistant Prof. Chen GU in THU. After that, I continued to pursue a PhD degree mainly in AI for seismology supervised by Chen in THU, and quited in January 2024. Due to my unusual experiences mentioned above, I also have a certain interest in disaster prevention and mitigation, as well as AI for science.
+I am a gap-year student applying for PhD position in artificial intelligence. Now I am working as a research intern (RA) supervised by Associate Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html) in Wangxuan Institute of Computer Technology, Peking University. My research interests mainly include stereo vision, general computer vision and other deep learning techniques. I received the B.Eng. degree in Civil Engineering from Tsinghua University, Beijing, China in 2023, supervised by Assistant Prof. Chen GU in THU. After that, I continued to pursue a PhD degree mainly in AI for seismology supervised by Chen in THU, and quited in January 2024. Due to my unusual experiences mentioned above, I also have a certain interest in disaster prevention and mitigation, as well as AI for science.
 {style="text-align: justify;"}
