@@ -43,7 +43,7 @@ education:
     #   year: 08/2024 - now
     - course: Research Intern (RA)
       institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University (PKU)
-      year: 03/2024 - now
+      year: 03/2024 - 
     - course: PhD in Civil Engineering (Quit)
       institution: Tsinghua University (THU)
       year: 09/2023 - 01/2024
