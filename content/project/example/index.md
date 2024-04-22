@@ -20,7 +20,7 @@ links:
   - icon: 🎞️🎞
     icon_pack: fab
     name: Slides
-    url: 'content/project/example/Driving_Simulation.pptx'
+    link: uploads/Borui_Kang_CV.pptx
 url_code: ''
 url_pdf: ''
 url_slides: ''
