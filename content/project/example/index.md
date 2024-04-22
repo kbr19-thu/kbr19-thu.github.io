@@ -23,7 +23,7 @@ links:
     link: 'content/project/example/Driving_Simulation.pdf'
 url_code: ''
 url_pdf: ''
-url_slides: ''
+# url_slides: ''
 url_video: ''
 
 # Slides (optional).
