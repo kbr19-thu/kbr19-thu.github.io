@@ -20,7 +20,7 @@ links:
   - icon: 🎞️🎞
     icon_pack: fab
     name: Slides
-    url: './Driving_Simulation.pptx'
+    url: 'content/project/example/Driving_Simulation.pptx'
 url_code: ''
 url_pdf: ''
 url_slides: ''
