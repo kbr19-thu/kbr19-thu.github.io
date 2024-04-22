@@ -32,7 +32,7 @@ interests:
   - Computer Vision
 
   - Deep Learning
-  
+
   - Artificial Intelligence
 
 # Education to show in About widget
@@ -41,14 +41,14 @@ education:
     # - course: PhD in Artificial Intelligence
     #   institution: National University of Singapore
     #   year: 08/2024 - now
-    - course: Research Intern
-      institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University(PKU)
+    - course: Research Intern (RA)
+      institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University (PKU)
       year: 03/2024 - now
     - course: PhD in Civil Engineering (Quit)
-      institution: Tsinghua University(THU)
+      institution: Tsinghua University (THU)
       year: 09/2023 - 01/2024
     - course: BEng in Civil Engineering
-      institution: Tsinghua University(THU)
+      institution: Tsinghua University (THU)
       year: 08/2019 - 06/2023
 
 # Skills
