@@ -17,7 +17,7 @@ links:
     icon_pack: fab
     name: Follow
     url: https://twitter.com/georgecushen
-  - icon: 🎞️🎞
+  - icon: film frames
     icon_pack: fab
     name: Slides
     link: 'content/project/example/Driving_Simulation.pdf'
