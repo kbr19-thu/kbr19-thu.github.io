@@ -17,7 +17,7 @@ links:
     icon_pack: fab
     name: Follow
     url: https://twitter.com/georgecushen
-  - icon: apple
+  - icon: file-powerpoint
     icon_pack: fab
     name: Slides
     url: projects/driving_simulation/Driving_Simulation.pdf
