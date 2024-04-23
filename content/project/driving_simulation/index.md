@@ -19,7 +19,7 @@ links:
     url: https://twitter.com/georgecushen
   - icon: twitter
     icon_pack: fab
-    name: Slide
+    name: Slides
     url: projects/driving_simulation/Driving_Simulation.pdf
 url_code: ''
 url_pdf: ''
