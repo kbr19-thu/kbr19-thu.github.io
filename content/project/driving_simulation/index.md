@@ -20,7 +20,11 @@ links:
   - icon: file-powerpoint
     icon_pack: fas
     name: Slides
-    url: projects/driving_simulation/Driving_Simulation.pdf
+    url: projects/driving_simulation/Driving_Simulation_Slides.pdf
+    - icon: sign-posts
+    icon_pack: fal
+    name: Poster
+    url: projects/driving_simulation/Driving_Simulation_Slides.pdf
 url_code: ''
 url_pdf: ''
 url_slides: ''
