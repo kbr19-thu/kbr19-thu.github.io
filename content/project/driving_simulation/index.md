@@ -13,10 +13,10 @@ image:
   focal_point: Smart
 
 links:
-  - icon: file
-    icon_pack: fas
-    name: Follow
-    url: https://twitter.com/georgecushen
+  # - icon: file
+  #   icon_pack: fas
+  #   name: Follow
+  #   url: https://twitter.com/georgecushen
   - icon: file-powerpoint
     icon_pack: fas
     name: Slides
@@ -33,6 +33,8 @@ url_video: ''
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
+
+# Exploring the Impact of Music on Driving Focus and Emergency Handling Ability in Driving Simulation: A Case Study of Novice Drivers
 
 11Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
