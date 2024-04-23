@@ -29,8 +29,8 @@ links:
     icon_pack: fas
     name: SRT_Award
     url: projects/driving_simulation/Second_Award.jpg
-  - icon: hb/python
-    icon_pack: hb
+  - icon: threedmax
+    icon_pack: devicon
     name: Python
     url: projects/driving_simulation/Second_Award.jpg
 url_code: ''
