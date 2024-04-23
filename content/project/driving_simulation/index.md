@@ -13,12 +13,12 @@ image:
   focal_point: Smart
 
 links:
-  - icon: twitter
-    icon_pack: fab
+  - icon: file
+    icon_pack: fas
     name: Follow
     url: https://twitter.com/georgecushen
   - icon: file-powerpoint
-    icon_pack: fab
+    icon_pack: fas
     name: Slides
     url: projects/driving_simulation/Driving_Simulation.pdf
 url_code: ''
