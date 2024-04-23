@@ -124,3 +124,37 @@ Finally, examining the impact of music on reaction time to pedestrians suddenly 
 
 ![](Figure9.png)
 Figure 9. Relationship between Reaction Time to Pedestrians Crossing and Music
+
+
+
+## Conclusion and Outlook
+### 1 Experimental Conclusion
+Music has a significant impact on driving behavior among novice drivers, with both advantages and disadvantages.
+#### 1.1 Benefits of Music on Driving Behavior:
+- Reduced **reaction time** to pedestrians (in the forward line of sight) by **13.6%**, indicating quicker responses.
+- **Increased brake frequency** by **5.3%**, suggesting more cautious driving.
+- **Decreased lane deviation** by **4.2%**, indicating more stable control.
+- **Lowered** driving **speed** by **7.3%**, indicating increased caution.
+#### 1.2 Drawbacks of Music on Driving Behavior:
+- **Increased reaction time** to vehicles running red lights (in the side line of sight) by **19.9%**, indicating slower responses.
+- **Decreased speed control ability by 31.7%**.
+#### 1.3 Effect of Music Volume:
+Analysis of data and graphics indicates that higher volume leads to a greater impact of music.
+#### 1.4 Effect of Music Language:
+In this experiment, the familiarity of music language did not significantly differentiate its impact on driving behavior among novice drivers. This suggests that the influence of music on driving is more related to melody or style rather than the language of the music, reflecting the instinctive preference for melody and language when listening to music.
+### 2 Recommendations and Prospects
+#### 2.1 Recommendations:
+##### 2.1.1 For Novice Drivers:
+Increase music volume on rural roads and highways to enhance alertness and caution.
+Avoid loud music in complex multi-vehicle road sections to prevent a decrease in the ability to handle sudden emergencies.
+##### 2.1.2 For Traffic Control Departments:
+Utilize comprehensive research findings to formulate policies guiding the reasonable use of music by novice drivers.
+#### 2.2 Future Prospects:
+As the first experiment conducted since the establishment of our laboratory, we have successfully debugged the equipment and procedures, providing valuable insights and suggestions for future experiments within the research group.
+Challenges
+## Technical Challenges:
+Building the simulation scene proved challenging due to the inefficiency and slow speed of scene construction by simulator manufacturers. The solution involved self-learning software usage and team members independently constructing the experimental scenes.
+Dealing with large and complex data sets (with tens of thousands of rows of vehicle data per participant and hundreds of thousands of rows of eye-tracking data) was difficult. This challenge was overcome through clever program design, utilizing Python for data segmentation and processing, and Excel and MATLAB for visualization.
+Limitations of the existing AI functionality, which only allowed triggering of AI vehicles, posed constraints on experiment design. The issue was resolved by adjusting controls to enable triggering of pedestrian AI.
+Coordination Challenges:
+The project involved coordination among multiple stakeholders, including supervisors, their graduate students, the laboratory host, their graduate students, simulator manufacturers, project members, and a large number of participants. Managing these relationships proved to be a significant challenge.
