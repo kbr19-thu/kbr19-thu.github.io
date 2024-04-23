@@ -34,11 +34,11 @@ image:
   caption: ''
   focal_point: Right
 
-# links:
-#   - icon: twitter
-#     icon_pack: fab
-#     name: Follow
-#     url: https://twitter.com/georgecushen
+links:
+  - icon: open-access
+    icon_pack: ai
+    name: Poster
+    url: events/WaveformMAE/AGU_Poster-KBR.pdf
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -61,7 +61,7 @@ projects:
 ---
 
 {{% callout note %}}
-Please download the **PDF** to find the whole poster and content.
+Please download the **Poster** to find the whole poster and content.
 {{% /callout %}}
 
 <!-- Slides can be added in a few ways:
