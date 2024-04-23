@@ -9,7 +9,7 @@ date: '2021-12-05T00:00:00Z'
 external_link: ''
 
 image:
-  caption: During the experiment
+  caption: 'Exploring the Impact of Music on Driving Focus and Emergency Handling Ability Based on Driving Simulation: A Case Study of Novice Drivers'
   focal_point: Smart
 
 links:
@@ -38,7 +38,7 @@ url_video: ''
 # slides: example
 ---
 
-# Exploring the Impact of Music on Driving Focus and Emergency Handling Ability in Driving Simulation: A Case Study of Novice Drivers
+## Abstract
 
 Improper driving behavior is a significant factor contributing to traffic accidents. The influence of listening to music on driving behavior is substantial but often overlooked. In this experiment, a simulation-based experimental approach was employed to investigate the effects of music genre (including instrumental, native language, and foreign language) and volume on driving behavior. Conducted at the "Driving Simulator Laboratory" of Tsinghua University's Institute of Transportation Studies, the experiment utilized the Unreal Engine to construct the experimental scenarios. Prior to and after the experiment, participants were required to complete questionnaires to gather relevant information. During the experiment, participants were instructed to drive along specified routes in two virtual urban environments while listening to different types of music. Additionally, participants were tasked with controlling vehicle speed, lane deviation, and managing sudden situations. Eye-tracking glasses were worn by participants to collect gaze data while driving, and relevant data regarding speed control and emergency situation handling were recorded. Through data analysis, the impact of music on driver focus and reaction capability can be elucidated, providing insights for safe driving practices and potential revisions to regulations by traffic management authorities.
 
