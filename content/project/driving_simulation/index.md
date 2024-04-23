@@ -76,8 +76,7 @@ High-quality music was downloaded from two well-known music websites and categor
 ### 3 Experimental Design
 In the virtual road scenes, eight straight road segments were set up (one for familiarization practice and seven for music experiment segments). Each road segment was 2.4km long, divided into three sections of 800m each, with intersections containing traffic lights at the boundaries. Except for the first road segment where participants started, the remaining seven road segments each had two driving events: vehicles running red lights laterally and pedestrians suddenly crossing the road. Pre-tests indicated that drivers did not experience significant discomfort during simulated driving experiments, but they required a short learning period to familiarize themselves with the operation. Therefore, the first road segment was provided as a conflict-free trial segment.
 ![](Figure2.png)
-Figure 2. Experiment Road Segments
-
+<p align="center">Figure 2. Experiment Road Segments</p>
 
 ### 4 Experimental Procedure
 After recruiting participants, they filled out pre-experiment questionnaires to collect driving-related information, such as driving duration and distance. Participants were then informed of the experimental schedule, and they were instructed to proceed to the driving simulation laboratory at the designated time. They were briefed on the experimental tasks and required to wear eye-tracking glasses (fitted with appropriate plano or myopic lenses according to participants' visual acuity) and Bluetooth earphones. Subsequently, eye tracker calibration was conducted. Participants were briefed on the presence of sudden traffic conflicts during testing, and their task was to drive on the correct simulated roads according to the screen instructions. In the event of a traffic conflict, they were instructed to operate the driving simulator appropriately to avoid traffic accidents. The experiment was conducted in a controlled environment free from external disturbances, with constant lighting and indoor quietness, lasting approximately 40 minutes. After the experiment, participants were asked to fill out post-experiment questionnaires.
@@ -89,7 +88,7 @@ The cardata software was used to record relevant data such as steering wheel, br
 ### 1 Reasonableness Check
 The shape of the speed curve is consistent, and the design of sudden events is effective, achieving the intended purpose satisfactorily.
 ![](Figure3.jpg)
-Figure 3. Speed of Participants on Experimental Road Segment 5
+<p align="center">Figure 3. Speed of Participants on Experimental Road Segment 5</p>
 
 ### 2 Data Analysis
 To clearly demonstrate the extent of the music's effects, we performed the following operations on all indicators: we calculated the average values of over thirty valid data points for each type of music as the experimental group data, and then normalized the data of the six experimental groups (six music conditions) by dividing them by the control group data.
@@ -97,35 +96,33 @@ To clearly demonstrate the extent of the music's effects, we performed the follo
 #### 2.1 Effect of Music on Speed
 The relationship between the average speed of each participant on each segment and the music played on the corresponding road segment is presented in a three-dimensional bar graph (Figure 4). It was observed that music led to a decrease in driving speed, with low-volume music having a more significant effect, while the volume of unfamiliar language songs had a smaller impact.
 ![](Figure4.png)
-Figure 4. Relationship between Speed and Music
+<p align="center">Figure 4. Relationship between Speed and Music</p>
 
 #### 2.2 Effect of Music on Speed Control
 The relationship between the proportion of successfully controlled speeds by each participant on each segment and the music played on the corresponding road segment is shown in a three-dimensional bar graph (Figure 5). It was found that music led to a decrease in speed control ability, with high-volume music having a more pronounced effect, while the impact of low-volume music with native language lyrics was minimal.
 ![](Figure5.png)
-Figure 5. Relationship between Speed Control Success Rate and Music
+<p align="center">Figure 5. Relationship between Speed Control Success Rate and Music</p>
 
 #### 2.3 Effect of Music on Lane Deviation
 Observing the impact of music on lane deviation (Figure 6), it can be seen that music enhanced lateral control ability, with larger sound volumes having a greater impact, except for low-volume instrumental music.
 ![](Figure6.png)
-Figure 6. Relationship between Deviation (from Lane Center) and Music
+<p align="center">Figure 6. Relationship between Deviation (from Lane Center) and Music</p>
 
 #### 2.4 Effect of Music on Brake Frequency
 Examining the impact of music on brake frequency (Figure 7), it can be observed that music increased brake frequency, with the effect of unfamiliar language songs being relatively minor, and the largest increase observed with high-volume instrumental music.
 ![](Figure7.png)
-Figure 7. Relationship between Brake Frequency and Music
+<p align="center">Figure 7. Relationship between Brake Frequency and Music</p>
 
 #### 2.5 Effect of Music on Reaction Time at Intersections
 Looking at the impact of music on reaction time to vehicles running red lights (Figure 8), overall, music increased reaction time (indicating decreased reaction ability), with no consistent patterns observed regarding language and volume effects.
 ![](Figure8.png)
-Figure 8. Relationship between Reaction Time to Vehicles Running Red Lights and Music
+<p align="center">Figure 8. Relationship between Reaction Time to Vehicles Running Red Lights and Music</p>
 
 #### 2.6 Effect of Music on Reaction Time to Pedestrians Crossing
 Finally, examining the impact of music on reaction time to pedestrians suddenly crossing the road (Figure 9), it was found that music led to faster reactions to pedestrians, with the effect becoming more significant with higher volume levels.
 
 ![](Figure9.png)
-Figure 9. Relationship between Reaction Time to Pedestrians Crossing and Music
-
-
+<p align="center">Figure 9. Relationship between Reaction Time to Pedestrians Crossing and Music</p>
 
 ## Conclusion and Outlook
 ### 1 Experimental Conclusion
@@ -151,10 +148,14 @@ Avoid loud music in complex multi-vehicle road sections to prevent a decrease in
 Utilize comprehensive research findings to formulate policies guiding the reasonable use of music by novice drivers.
 #### 2.2 Future Prospects:
 As the first experiment conducted since the establishment of our laboratory, we have successfully debugged the equipment and procedures, providing valuable insights and suggestions for future experiments within the research group.
-Challenges
-## Technical Challenges:
+
+## Challenges
+### 1 Technical Challenges:
 Building the simulation scene proved challenging due to the inefficiency and slow speed of scene construction by simulator manufacturers. The solution involved self-learning software usage and team members independently constructing the experimental scenes.
+
 Dealing with large and complex data sets (with tens of thousands of rows of vehicle data per participant and hundreds of thousands of rows of eye-tracking data) was difficult. This challenge was overcome through clever program design, utilizing Python for data segmentation and processing, and Excel and MATLAB for visualization.
+
 Limitations of the existing AI functionality, which only allowed triggering of AI vehicles, posed constraints on experiment design. The issue was resolved by adjusting controls to enable triggering of pedestrian AI.
-Coordination Challenges:
+
+### 2 Coordination Challenges:
 The project involved coordination among multiple stakeholders, including supervisors, their graduate students, the laboratory host, their graduate students, simulator manufacturers, project members, and a large number of participants. Managing these relationships proved to be a significant challenge.
