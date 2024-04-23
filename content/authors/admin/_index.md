@@ -27,7 +27,7 @@ organizations:
   #   url: https://www.tsinghua.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests stereo vision, general computer vision and other deep learning techniques.
+bio: My research interests mainly include stereo vision, general computer vision and other deep learning techniques.
 
 # Interests to show in About widget
 interests:
