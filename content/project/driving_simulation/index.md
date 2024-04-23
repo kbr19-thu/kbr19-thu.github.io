@@ -29,6 +29,10 @@ links:
     icon_pack: fas
     name: SRT Award
     url: projects/driving_simulation/Second_Award.jpg
+  - icon: award
+    icon_pack: fas
+    name: Prizes in Traffic Competition
+    url: projects/driving_simulation/Prizes_in_Traffic_Competition.pdf
 url_code: ''
 url_pdf: ''
 url_slides: ''
