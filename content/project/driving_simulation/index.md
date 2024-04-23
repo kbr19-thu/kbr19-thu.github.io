@@ -29,6 +29,10 @@ links:
     icon_pack: fas
     name: SRT_Award
     url: projects/driving_simulation/Second_Award.jpg
+  - icon: hb/python
+    icon_pack: hb
+    name: Python
+    url: projects/driving_simulation/Second_Award.jpg
 url_code: ''
 url_pdf: ''
 url_slides: ''
