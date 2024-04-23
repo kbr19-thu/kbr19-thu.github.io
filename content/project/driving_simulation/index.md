@@ -24,7 +24,7 @@ links:
     - icon: sign-posts
     icon_pack: fal
     name: Poster
-    url: projects/driving_simulation/Driving_Simulation_Slides.pdf
+    url: projects/driving_simulation/Driving_Simulation_Poster.pdf
 url_code: ''
 url_pdf: ''
 url_slides: ''
