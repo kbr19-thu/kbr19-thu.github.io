@@ -163,15 +163,27 @@ The project involved coordination among multiple stakeholders, including supervi
 ## References
 
 [1] HELEN C. BEH,RICHARD HIRST. Performance on driving-related tasks during music[J]. Ergonomics,1999,42(8).
+
 [2] 杨萌,王剑桥,夏裕祁,杨帆,张学民.背景音乐的节奏与歌词语言熟悉程度对驾驶行为及眼动的影响[J].心理科学,2011,34(05):1056-1061.
+
 [3] 程杰,唐智慧,李小玲,刘杰,刘飞燕.驾驶中听音乐对驾驶安全的影响[J].中国安全科学学报,2014,24(05):21-25.
+
 [4] 石京,肖遥,陈志良.音乐喜好对驾驶行为的影响[J].交通信息与安全,2014,32(05):52-57.
+
 [5] 邱欢. 不同音乐条件对驾驶警觉的影响[D].辽宁师范大学,2015.
+
 [6] 赖武宁. 车载音乐对汽车驾驶员心理负荷及驾驶行为的影响研究[D].华南理工大学,2016.
+
 [7] 阿拉法特,吴超仲.音乐和自然声音对驾驶行为和安全性的影响——以城市道路模拟驾驶为例（英文）[J].交通信息与安全,2017,35(01):44-54.
+
 [8] 李姝.车载音乐设备使用对驾驶安全影响分析[J].综合运输,2018,40(05):81-84.
+
 [9] Ayça Berfu Ünal,Linda Steg,Kai Epstude. The influence of music on mental effort and driving performance[J]. Accident Analysis and Prevention,2012,48.
+
 [10] I. D. Brown. EFFECT OF A CAR RADIO ON DRIVING IN TRAFFIC[J]. Ergonomics,1965,8(4).
+
 [11] Turner M L,Fernandez J E,Nelson K. The effect of music amplitude on the reaction to unexpected visual events.[J]. The Journal of general psychology,1996,123(1).
+
 [12] Oron-Gilad Tal,Ronen Adi,Shinar David. Alertness maintaining tasks (AMTs) while driving.[J]. Accident; analysis and prevention,2008,40(3).
+
 [13] Young K ,  Regan M ,  Hammer M . Driver distraction: a review of the literature[J]. Distracted Driving Sydney, 2007, 46(36):4266-4269.
