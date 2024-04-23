@@ -29,10 +29,6 @@ links:
     icon_pack: fas
     name: SRT Award
     url: projects/driving_simulation/Second_Award.jpg
-  - icon: threedsmax
-    icon_pack: devicon
-    name: Python
-    url: projects/driving_simulation/Second_Award.jpg
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -82,3 +78,6 @@ After recruiting participants, they filled out pre-experiment questionnaires to 
 
 ### 5 Data Collection
 The cardata software was used to record relevant data such as steering wheel, brake, and accelerator inputs from the simulator, as well as vehicle speed and position in the experimental scenes (20Hz). Simultaneously, Curestudio software was used to collect eye-tracking data (120Hz).
+
+![车速与音乐关系图](Figure9.png)
+
