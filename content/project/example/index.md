@@ -20,7 +20,7 @@ links:
   - icon: twitter
     icon_pack: fab
     name: Slides
-    link: content/project/example/Driving_Simulation.pdf
+    link: 'content/project/example/Driving_Simulation.pdf'
 url_code: ''
 url_pdf: ''
 url_slides: content/project/example/Driving_Simulation.pdf
