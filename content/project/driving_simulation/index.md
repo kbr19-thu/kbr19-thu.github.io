@@ -71,7 +71,7 @@ Interactive video images of simulated urban road conditions were continuously pl
 High-quality music was downloaded from two well-known music websites and categorized into three types based on language: instrumental music (without lyrics), Chinese music (native language), and Mongolian music (unfamiliar language). The low volume level was set at 50dB, similar to the built-in engine noise, while the high volume level was set at 70dB, measured with a decibel meter. Apart from the six types of music consisting of two volume levels and three languages, a blank segment without music was included as a control. With these seven language and volume music variations as the only variable, the experiment aimed to investigate their effects on participants.
 
 ![](Figure1.png)
-Figure 1. Music Implementation
+<p align="center">Figure 1. Music Implementation</p>
 
 ### 3 Experimental Design
 In the virtual road scenes, eight straight road segments were set up (one for familiarization practice and seven for music experiment segments). Each road segment was 2.4km long, divided into three sections of 800m each, with intersections containing traffic lights at the boundaries. Except for the first road segment where participants started, the remaining seven road segments each had two driving events: vehicles running red lights laterally and pedestrians suddenly crossing the road. Pre-tests indicated that drivers did not experience significant discomfort during simulated driving experiments, but they required a short learning period to familiarize themselves with the operation. Therefore, the first road segment was provided as a conflict-free trial segment.
