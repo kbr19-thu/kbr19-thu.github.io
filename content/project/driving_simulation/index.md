@@ -79,5 +79,5 @@ After recruiting participants, they filled out pre-experiment questionnaires to 
 ### 5 Data Collection
 The cardata software was used to record relevant data such as steering wheel, brake, and accelerator inputs from the simulator, as well as vehicle speed and position in the experimental scenes (20Hz). Simultaneously, Curestudio software was used to collect eye-tracking data (120Hz).
 
-![Figure 9: Relationship between Reaction Time to Pedestrians Crossing and Music](Figure9.png)
+![Figure 9. Relationship between Reaction Time to Pedestrians Crossing and Music](Figure9.png)
 
