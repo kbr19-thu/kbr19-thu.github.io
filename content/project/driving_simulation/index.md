@@ -21,10 +21,14 @@ links:
     icon_pack: fas
     name: Slides
     url: projects/driving_simulation/Driving_Simulation_Slides.pdf
-  - icon: signs-post
-    icon_pack: fas
+  - icon: open-access
+    icon_pack: ai
     name: Poster
     url: projects/driving_simulation/Driving_Simulation_Poster.pdf
+  - icon: python
+    icon_pack: hb
+    name: SRT_Award
+    url: projects/driving_simulation/Second_Award.jpg
 url_code: ''
 url_pdf: ''
 url_slides: ''
