@@ -20,12 +20,12 @@ links:
   - icon: twitter
     icon_pack: fab
     name: Slides
-    link: 'content/project/example/Driving_Simulation.pdf'
+    link: uploads/Borui_Kang_CV.pdf
 url_code: ''
 url_pdf: ''
-url_slides: 'content/project/example/Driving_Simulation.pdf'
+url_slides: uploads/Borui_Kang_CV.pdf
 url_video: ''
-
+# 'content/project/example/Driving_Simulation.pdf'
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
