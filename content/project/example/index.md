@@ -20,7 +20,7 @@ links:
   - icon: twitter
     icon_pack: fab
     name: Slide
-    link: https://github.com/kbr19-thu/kbr19-thu.github.io/tree/main/content/project/example/Driving_Simulation.pdf
+    link: https://github.com/kbr19-thu/kbr19-thu.github.io/tree/main/content/project/example/Driving_Simulation
 url_code: ''
 url_pdf: ''
 url_slides: ''
