@@ -16,16 +16,16 @@ links:
   - icon: twitter
     icon_pack: fab
     name: Follow
-    url: https://twitter.com/georgecushen1
+    url: https://twitter.com/georgecushen
   - icon: twitter
     icon_pack: fab
-    name: Slides
+    name: Slide
     link: https://github.com/kbr19-thu/kbr19-thu.github.io/tree/main/content/project/example/Driving_Simulation.pdf
 url_code: ''
 url_pdf: ''
 url_slides: ''
 url_video: ''
-# 'content/project/example/Driving_Simulation.pdf'
+
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
