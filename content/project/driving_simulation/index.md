@@ -25,8 +25,8 @@ links:
     icon_pack: ai
     name: Poster
     url: projects/driving_simulation/Driving_Simulation_Poster.pdf
-  - icon: python
-    icon_pack: hb
+  - icon: award
+    icon_pack: fas
     name: SRT_Award
     url: projects/driving_simulation/Second_Award.jpg
 url_code: ''
