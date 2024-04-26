@@ -90,7 +90,7 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: honors/excellent_graduate
+        - certificate_url: honors/excellent_graduate.pdf
           date_end: ''
           date_start: '2023-06-30'
           description: ''
