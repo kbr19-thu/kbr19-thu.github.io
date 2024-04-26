@@ -95,10 +95,9 @@ sections:
           date_end: ''
           date_start: '2023-06-30'
           description: 'Only about 12% graduate of Tsinghua University are awarded this honor every year.'
-          icon: award
-          icon_pack: fas
+          # icon: cousera
           organization: Tsinghua University
-          organization_url: https://www.coursera.org
+          organization_url: https://www.tsinghua.edu.cn
           title: Excellent (优良) Graduate
           url: ''
         - certificate_url: https://www.edx.org
