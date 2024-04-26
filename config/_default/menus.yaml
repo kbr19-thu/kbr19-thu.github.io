@@ -19,6 +19,9 @@ main:
   - name: Honors and Awards
     url: '#honors'
     weight: 50
+  - name: Gallery
+    url: '#gallery'
+    weight: 60
   - name: Contact
     url: '#contact'
     weight: 60
