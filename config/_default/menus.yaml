@@ -16,8 +16,8 @@ main:
   - name: Projects
     url: '#projects'
     weight: 40
-  - name: Posts
-    url: '#posts'
+  - name: Honors and Awards
+    url: '#honors'
     weight: 50
   - name: Contact
     url: '#contact'
