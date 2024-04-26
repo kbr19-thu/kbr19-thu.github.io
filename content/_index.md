@@ -94,7 +94,7 @@ sections:
         - certificate_url: honors/excellent_graduate.pdf
           date_end: ''
           date_start: '2023-06-30'
-          description: ''
+          description: 'Only about 12% graduate of Tsinghua University are awarded this honor every year.'
           icon: award
           icon_pack: fas
           organization: Tsinghua University
