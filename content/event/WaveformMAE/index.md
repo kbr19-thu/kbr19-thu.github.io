@@ -25,7 +25,7 @@ all_day: false
 publishDate: '2024-03-02T00:00:00Z'
 
 authors: [admin, Peng Wu, Chen Gu, Yichen Zhong]
-tags: []
+tags: [AI for Seismology]
 
 # Is this a featured talk? (true/false)
 featured: false
