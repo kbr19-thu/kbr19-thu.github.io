@@ -39,6 +39,10 @@ links:
     icon_pack: ai
     name: Poster
     url: events/WaveformMAE/AGU_Poster-KBR.pdf
+  - icon: link
+    icon_pack: fas
+    name: Event Link
+    url: https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1409667
 url_code: ''
 url_pdf: ''
 url_slides: ''
