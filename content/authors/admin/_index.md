@@ -17,23 +17,25 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Research Intern (RA) # B.Eng. of Civil Engineering # PhD Student of Artificial Intelligence # PhD Candidate of Artificial Intelligence
+role: PhD Student # B.Eng. of Civil Engineering # PhD Student of Artificial Intelligence # PhD Candidate of Artificial Intelligence
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Peking University (PKU)
-    url: https://www.pku.edu.cn
+  - name: National University of Singapore (NUS)
+    url: https://www.nus.edu.sg
+  # - name: Peking University (PKU)
+  #   url: https://www.pku.edu.cn
   # - name: Tsinghua University (THU)
   #   url: https://www.tsinghua.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests mainly include stereo vision, general computer vision and other deep learning techniques.
+bio: My research interests mainly include medical image processing, general computer vision and other deep learning techniques.
 
 # Interests to show in About widget
 interests:
-  - Stereo Vision
+  - Medical Image Processing
   - Computer Vision
-  - AI for Science
+  - AI for Healthcare & Science
   - Deep Learning
   - Artificial Intelligence
   - Disaster Prevention and Mitigation
@@ -41,12 +43,12 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    # - course: PhD in Artificial Intelligence
-    #   institution: National University of Singapore
-    #   year: 08/2024 - now
+    - course: PhD in Department of Electrical and Computer Engineering, CDE, National University of Singapore (NUS)
+      institution: National University of Singapore
+      year: 08/2024 - now
     - course: Research Intern (RA)
       institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University (PKU)
-      year: 03/2024 - 
+      year: 03/2024 - 07/2024
     - course: PhD in Civil Engineering (Quit)
       institution: Institute of Disaster Prevention and Mitigation Engineering (IDPME), Department of Civil Engineering, Tsinghua University (THU)
       year: 09/2023 - 01/2024
@@ -128,5 +130,7 @@ social:
 highlight_name: true
 ---
 
-I am a gap-year student applying for PhD position in artificial intelligence. Now I am working as a research intern (RA) supervised by Associate Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html) in [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn). My research interests mainly include stereo vision, general computer vision and other deep learning techniques. I received the B.Eng. degree in Civil Engineering from [School of Civil Engineering](https://www.civil.tsinghua.edu.cn/), awarded **excellent (优良) graduate** of [Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China in June 2023, supervised by Assistant Prof. Chen GU. After that, I continued to pursue a PhD degree mainly in AI for seismology supervised by Chen in Institute of Disaster Prevention and Mitigation Engineering (IDPME), and quited in January 2024. Due to my unusual experiences mentioned above, I also have a certain interest in disaster prevention and mitigation, as well as AI for science.
+I am a PhD student in Department of Electrical and Computer Engineering, CDE, National University of Singapore (NUS). Before that, I worked as a research intern (RA) supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html) in [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn). My research interests mainly include stereo vision, general computer vision and other deep learning techniques. I received the B.Eng. degree in Civil Engineering from [School of Civil Engineering](https://www.civil.tsinghua.edu.cn/), awarded **excellent (优良) graduate** of [Tsinghua University](https://www.tsinghua.edu.cn), Beijing, China in June 2023, supervised by Prof. Chen GU.  Due to my unusual experiences mentioned above, I also have a certain interest in disaster prevention and mitigation, as well as AI for science.
 {style="text-align: justify;"}
+
+<!-- After that, I continued to pursue a PhD degree mainly in AI for seismology supervised by Chen in Institute of Disaster Prevention and Mitigation Engineering (IDPME), and quited in January 2024. -->
