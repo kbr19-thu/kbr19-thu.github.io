@@ -238,7 +238,7 @@ sections:
       address:
         street: E7 Building, 15 Kent Ridge Cres
         city: Singapore
-        region: Singapore
+        # region: Singapore
         postcode: '119276'
         country: Singapore
         country_code: SG
@@ -248,8 +248,8 @@ sections:
       #   - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '1.2989049841852958'
-        longitude: '103.77417710223554'
+        latitude: '1.298'
+        longitude: '103.774'
       # contact_links:
         # - icon: twitter
         #   icon_pack: fab
