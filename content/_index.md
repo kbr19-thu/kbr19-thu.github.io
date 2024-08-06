@@ -215,7 +215,7 @@ sections:
       title: Gallery
       subtitle: ''
       text: |-
-        {{< gallery album="demo" >}}
+        {{< gallery album="shown" >}}
     design:
       columns: '1'
   - block: tag_cloud
@@ -234,11 +234,11 @@ sections:
       email: borui.kang@u.nus.edu
       # email: kbr19thu@gmail.com
       # phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
+      # appointment_url: 'https://calendly.com'
       address:
-        street: 15 Kent Ridge Cres,  119276
-        city: Singapore
-        region: Singapore
+        street: E7 Building, 15 Kent Ridge Cres
+        # city: Singapore
+        # region: Singapore
         postcode: '119276'
         country: Singapore
         country_code: SG
@@ -248,8 +248,8 @@ sections:
       #   - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '40.0023058'
-        longitude: '116.3235426'
+        latitude: '1.30'
+        longitude: '103.80'
       # contact_links:
         # - icon: twitter
         #   icon_pack: fab
