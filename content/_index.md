@@ -237,8 +237,8 @@ sections:
       # appointment_url: 'https://calendly.com'
       address:
         street: E7 Building, 15 Kent Ridge Cres
-        # city: Singapore
-        # region: Singapore
+        city: Singapore
+        region: Singapore
         postcode: '119276'
         country: Singapore
         country_code: SG
@@ -248,8 +248,8 @@ sections:
       #   - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '1.30'
-        longitude: '103.80'
+        latitude: '1.29'
+        longitude: '103.78'
       # contact_links:
         # - icon: twitter
         #   icon_pack: fab
