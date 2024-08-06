@@ -187,7 +187,7 @@ sections:
           # icon: cousera
           organization: Tsinghua University
           organization_url: https://www.tsinghua.edu.cn
-          title: Excellent (优良) Graduate
+          title: Excellent Graduate (优良毕业生)
           url: ''
         - certificate_url: https://www.edx.org
           date_end: ''
@@ -229,18 +229,19 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Feel free to contact me if you want to collaborate or discuss academic issues.
+        Feel free to contact me if you would like to collaborate or discuss academic issues.
       # Contact (add or remove contact options as necessary)
-      email: kbr19thu@gmail.com
+      email: borui.kang@u.nus.edu
+      # email: kbr19thu@gmail.com
       # phone: 888 888 88 88
-      # appointment_url: 'https://calendly.com'
-      # address:
-      #   street: 450 Serra Mall
-      #   city: Stanford
-      #   region: CA
-      #   postcode: '94305'
-      #   country: United States
-      #   country_code: US
+      appointment_url: 'https://calendly.com'
+      address:
+        street: 15 Kent Ridge Cres,  119276
+        city: Singapore
+        region: Singapore
+        postcode: '119276'
+        country: Singapore
+        country_code: SG
       # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
