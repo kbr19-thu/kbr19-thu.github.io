@@ -78,9 +78,9 @@ sections:
   #   design:
   #     columns: '2'
   - block: collection
-    id: posts
+    id: news
     content:
-      title: Recent Posts
+      title: Recent News
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
