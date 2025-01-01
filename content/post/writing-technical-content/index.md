@@ -1,5 +1,5 @@
 ---
-title: Writing technical content in Markdown
+title: ICCCBE
 date: 2019-07-12
 math: true
 image:
