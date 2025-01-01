@@ -28,17 +28,17 @@ image:
   placement: 2
   preview_only: false
 
-authors:
-  - admin
-  - 吳恩達
+# authors:
+#   - admin
+#   - 吳恩達
 
 tags:
   - Academic
   - 开源
 
-categories:
-  - Demo
-  - 教程
+# categories:
+#   - Demo
+#   - 教程
 ---
 
 ```python
