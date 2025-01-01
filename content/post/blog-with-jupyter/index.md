@@ -1,17 +1,17 @@
 ---
-title: Blog with Jupyter Notebooks!
-date: '2023-11-04'
-summary: Easily blog from Jupyter notebooks!
+title: Our three abstracts were accepted by EGU2024!
+date: '2024-03-07'
+summary: About Bayesian optimal experimental design for fracture imaging, Near Surface Imaging using distributed acoustic senssing, and Climate-Induced Ocean Wave Activities using seismic array data.
 ---
 
 
 ```python
 from IPython.core.display import Image
-Image('https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png')
+Image('https://www.egu24.eu/template_egu24_logo.svg')
 ```
 
     
-![png](output_1_0.png)
+<!-- ![png](output_1_0.png) -->
     
 
 ```python

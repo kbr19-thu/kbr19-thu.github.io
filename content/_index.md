@@ -81,8 +81,8 @@ sections:
     id: news
     content:
       title: Recent News
-      subtitle: ''
-      text: ''
+      subtitle: 'test1'
+      text: 'test2'
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
       # Filter on criteria
