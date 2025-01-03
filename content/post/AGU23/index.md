@@ -3,16 +3,16 @@ title: Our three abstracts were accepted by AGU 2023 Annual Meeting!
 # subtitle: Welcome 👋 We know that first impressions are important, so we've populated your new site with some initial content to help you get familiar with everything in no time.
 
 # Summary for listings and search engines
-summary: Welcome 👋 We know that first impressions are important, so we've populated your new site with some initial content to help you get familiar with everything in no time.
+summary: About Self-Supervised Learning for Ground Motion Waveforms Reconstruction, Digital twin planet, and Unveiling Climate Information from Seismic Array.
 
 # Link this post with a project
 projects: []
 
 # Date published
-date: '2020-12-13T00:00:00Z'
+date: '2023-10-04'
 
 # Date updated
-lastmod: '2020-12-13T00:00:00Z'
+# lastmod: '2020-12-13T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
@@ -41,6 +41,27 @@ tags:
 #   - 教程
 ---
 
+
+Kang, B., Wu, P., Gu, C., & Zhong, Y. (2023). Self-Supervised Learning for Fault-Inversion-Free Reconstruction of Ground Motion Waveforms Across the Entire Area. AGU23.
+
+https://ui.adsabs.harvard.edu/abs/2023AGUFM.S31F0409K/abstract
+
+
+Gu, C., Zhong, Y., Kang, B., Wu, P., Chen, Z., Yuan, Z., & Fehler, M. (2023). Digital twin planet: Deciphering, Forecasting, and Visualizing Time Series Signals from Ground Motions to Building Vibrations. AGU23.
+
+https://ui.adsabs.harvard.edu/abs/2023AGUFMIN43B0633G/abstract
+
+
+Zhong, Y., Gu, C., Fehler, M. C., Prieto, G. A., Wu, P., & Kang, B. (2023). Unveiling Climate Information from Seismic Array in Groningen. AGU23.
+
+https://ui.adsabs.harvard.edu/abs/2023AGUFMOS51C1171Z/abstract
+
+
+
+
+
+
+<!-- 
 ```python
 import libr
 print('hello')
@@ -107,4 +128,4 @@ Wowchemy and its templates come with **automatic day (light) and night (dark) mo
 
 Copyright 2016-present [George Cushen](https://georgecushen.com).
 
-Released under the [MIT](https://github.com/HugoBlox/hugo-blox-builder/blob/master/LICENSE.md) license.
+Released under the [MIT](https://github.com/HugoBlox/hugo-blox-builder/blob/master/LICENSE.md) license. -->
