@@ -13,7 +13,7 @@ https://meetingorganizer.copernicus.org/EGU24/EGU24-17566.html
 
 Wu, P., Gu, C., Zhong, Y., Yuan, Z., Chen, Z., & Kang, B. (2024). Near Surface Imaging with Zig-Zag shaped DAS Arrays Based on Cross Correlation of Ambient Noise (No. EGU24-16151). Copernicus Meetings.
 
-https://meetingorganizer.copernicus.org/EGU24/EGU24-17939.html
+https://meetingorganizer.copernicus.org/EGU24/EGU24-16151.html
 
 
 Yuan, Z., Gu, C., Zhong, Y., Wu, P., Chen, Z., & Kang, B. (2024). Bayesian optimal experimental design for fracture imaging (No. EGU24-17939). Copernicus Meetings.
