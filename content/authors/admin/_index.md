@@ -36,9 +36,9 @@ interests:
   - Medical Image Processing
   - Computer Vision
   - AI for Healthcare & Science
-  - Deep Learning
-  - Artificial Intelligence
-  - Disaster Prevention and Mitigation
+  # - Deep Learning
+  # - Artificial Intelligence
+  # - Disaster Prevention and Mitigation
 
 # Education to show in About widget
 education:
@@ -50,7 +50,8 @@ education:
       institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University (PKU)
       year: 03/2024 - 07/2024
     - course: PhD in Civil Engineering (Quit)
-      institution: Institute of Disaster Prevention and Mitigation Engineering (IDPME), Department of Civil Engineering, Tsinghua University (THU)
+      # institution: Institute of Disaster Prevention and Mitigation Engineering (IDPME), Department of Civil Engineering, Tsinghua University (THU)
+      institution: GU Inverse Group, Department of Civil Engineering, Tsinghua University (THU)
       year: 09/2023 - 01/2024
     - course: BEng in Civil Engineering
       institution: Department of Civil Engineering, Tsinghua University (THU)
