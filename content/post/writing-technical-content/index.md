@@ -1,5 +1,5 @@
 ---
-title: One paper was accepted by ICCCBE 2022!
+title: Our one paper was accepted by ICCCBE 2022!
 date: 2022-10-26
 math: true
 summary: About Text Mining-Based Patent Analysis for Automated Rule Checking in AEC.
