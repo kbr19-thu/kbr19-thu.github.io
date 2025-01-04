@@ -1,3 +1,19 @@
+<!-- 
+---
+title: External Project
+summary: An example of linking directly to an external project website using `external_link`.
+tags:
+  - Other
+date: "2016-04-27T00:00:00Z"
+
+# Optional external URL for project (replaces project detail page).
+external_link: https://example.org
+
+image:
+  caption: Photo by Toa Heftiba on Unsplash
+  focal_point: Smart
+--- -->
+
 ---
 title: 'Exploring the Impact of Music on Driving Focus and Emergency Handling Ability Based on Driving Simulation: A Case Study of Novice Drivers'
 summary: A study investigated the impact of music with different volumes and languages on driver behavior. Specifically, it examined factors such as reaction time to encountering vehicles running red lights or pedestrians suddenly crossing the road, as well as the ability to maintain a constant vehicle speed. A somewhat counterintuitive finding was that the study discovered that appropriate music might enhance drivers' reaction speed rather than impede them.
