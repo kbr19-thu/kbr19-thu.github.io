@@ -1,13 +1,25 @@
 ---
-title: ICCCBE
-date: 2019-07-12
+title: One paper was accepted by ICCCBE 2022!
+date: 2022-10-26
 math: true
-image:
-  placement: 2
-  caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
+summary: About Text Mining-Based Patent Analysis for Automated Rule Checking in AEC.
+# image:
+#   placement: 2
+#   caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
 ---
+It is about Text Mining-Based Patent Analysis for Automated Rule Checking in AEC.
 
-Hugo Blox Builder is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.
+Zheng, Z., Kang, B. R., Yuan, Q. T., Zhou, Y. C., Lu, X. Z., & Lin, J. R. (2022, October). Text Mining-Based Patent Analysis for Automated Rule Checking in AEC. In International Conference on Computing in Civil and Building Engineering (pp. 11-25). Cham: Springer Nature Switzerland.
+
+https://link.springer.com/chapter/10.1007/978-3-031-32515-1_2
+
+https://arxiv.org/pdf/2212.05891
+
+
+
+
+
+<!-- Hugo Blox Builder is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.
 
 **Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.**
 
@@ -387,4 +399,4 @@ renders as
 {{< icon name="python" pack="fab" >}} Python  
 {{< icon name="r-project" pack="fab" >}} R
 
-### Did you find this page helpful? Consider sharing it 🙌
+### Did you find this page helpful? Consider sharing it 🙌 -->
