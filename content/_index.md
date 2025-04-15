@@ -158,6 +158,8 @@ sections:
           tag: '*'
         - name: Deep Learning
           tag: Deep Learning
+        - name: Game Engine
+          tag: Game Engine
         - name: Other
           tag: Other
     design:
