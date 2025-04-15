@@ -55,6 +55,8 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
+          pattern: my-artifact-*
+          merge-multiple: true
 
   # Deploy website to GitHub Pages hosting
   deploy:
