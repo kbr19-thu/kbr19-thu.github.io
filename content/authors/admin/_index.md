@@ -34,9 +34,9 @@ bio: My research interests mainly include medical image processing, general comp
 # Interests to show in About widget
 interests:
   - Medical Image Processing
-  - Computer Vision
-  - AI for Healthcare & Science
-  # - Deep Learning
+  - Computer Vision (Especially Low-level Problems)
+  - Other Applications of Deep Learning
+  # - AI for Healthcare & Science
   # - Artificial Intelligence
   # - Disaster Prevention and Mitigation
 
@@ -131,7 +131,7 @@ social:
 highlight_name: true
 ---
 
-I am currently a PhD student in Department of [Electrical and Computer Engineering, CDE](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg), supervised by Prof. [Yueming JIN](https://yuemingjin.github.io/). Before that, I worked as a research intern (RA) supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html) in [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn). And before that, I received the B.Eng. degree in Civil Engineering from [School of Civil Engineering](https://www.civil.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn), awarded **Excellent Graduate (优良毕业生)** of THU in June 2023 and supervised by Prof. [Chen GU](http://www.chenguatmit.com/), an MIT alumna. During my undergraduate period, I also worked with Prof. [Jia-Rui LIN](https://linjiarui.net/en/), Prof. [Jing SHI](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya SHEN](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm) and Prof. [Zhenzhong HU](http://www.huzhenzhong.net/). My research interests mainly include medical image inverse problems, general computer vision, AI for Healthcare & Science and other deep learning techniques. Due to my unusual experiences mentioned above, I also have a certain interest in disaster prevention and mitigation, especially AI for that.
+I am currently a PhD student in Department of [Electrical and Computer Engineering, CDE](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg). Before that, I worked as a research intern (RA) supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html) in [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn). And before that, I received the B.Eng. degree in Civil Engineering from [School of Civil Engineering](https://www.civil.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn), awarded **Excellent Graduate (优良毕业生)** of THU in June 2023 and supervised by Prof. [Chen GU](http://www.chenguatmit.com/), an MIT alumna. During my undergraduate period, I also worked with Prof. [Jia-Rui LIN](https://linjiarui.net/en/), Prof. [Jing SHI](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya SHEN](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm) and Prof. [Zhenzhong HU](http://www.huzhenzhong.net/). My research interests mainly include medical image inverse problems, computer vision (especially low-level problems) and other apppications of deep learning techniques, such as AI for Healthcare & Science. Due to my unusual experiences mentioned above, I also have a certain interest in disaster prevention and mitigation, especially AI for that.
 {style="text-align: justify;"}
 
 <!-- After that, I continued to pursue a PhD degree mainly in AI for seismology supervised by Chen in Institute of Disaster Prevention and Mitigation Engineering (IDPME), and quited in January 2024. -->
