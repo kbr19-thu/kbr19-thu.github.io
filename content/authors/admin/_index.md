@@ -11,13 +11,13 @@ last_name: Kang
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: "💻"
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: PhD Student # B.Eng. of Civil Engineering # PhD Student of Artificial Intelligence # PhD Candidate of Artificial Intelligence
+role: PhD Student
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -29,33 +29,31 @@ organizations:
   #   url: https://www.tsinghua.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests mainly include medical image processing, general computer vision and other deep learning techniques.
+bio: PhD student at NUS, independent entrepreneur, and quantitative retail trader working on medical image inverse problems, low-level vision, and deep learning for scientific applications.
 
 # Interests to show in About widget
 interests:
-  - Medical Image Processing
-  - Computer Vision (Especially Low-level Problems)
-  - Other Applications of Deep Learning
-  # - AI for Healthcare & Science
-  # - Artificial Intelligence
-  # - Disaster Prevention and Mitigation
+  - Medical Image Inverse Problems
+  - Low-level Computer Vision
+  - AI for Healthcare and Science
+  - Entrepreneurship
+  - Algorithmic Trading
 
 # Education to show in About widget
 education:
   courses:
     - course: PhD in Electrical and Computer Engineering
-      institution: iMVR lab, Department of Electrical and Computer Engineering, CDE, National University of Singapore (NUS)
-      year: 08/2024 - now
-    - course: Research Intern (RA)
-      institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University (PKU)
-      year: 03/2024 - 07/2024
-    - course: PhD in Civil Engineering (Quit)
-      # institution: Institute of Disaster Prevention and Mitigation Engineering (IDPME), Department of Civil Engineering, Tsinghua University (THU)
-      institution: GU Inverse Group, Department of Civil Engineering, Tsinghua University (THU)
-      year: 09/2023 - 01/2024
+      institution: iMVR Lab, Department of Electrical and Computer Engineering, College of Design and Engineering, National University of Singapore
+      year: 2024 - Present
+    - course: Research Intern
+      institution: STRUCT, Wangxuan Institute of Computer Technology, Peking University
+      year: 2024
+    - course: PhD in Civil Engineering
+      institution: GU Inverse Group, Department of Civil Engineering, Tsinghua University
+      year: 2023 - 2024
     - course: BEng in Civil Engineering
-      institution: Department of Civil Engineering, Tsinghua University (THU)
-      year: 08/2019 - 06/2023
+      institution: Department of Civil Engineering, Tsinghua University
+      year: 2019 - 2023
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -104,7 +102,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: 'mailto:borui.kang@u.nus.edu'
   # - icon: twitter
   #   icon_pack: fab
   #   link: https://twitter.com/GeorgeCushen
@@ -117,9 +115,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/kbr19-thu
-  # - icon: linkedin
-  #   icon_pack: fab
-  #   link: https://www.linkedin.com/
+  - icon: linkedin
+    icon_pack: fab
+    link: https://linkedin.com/in/borui-kang-91943226a
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
@@ -131,7 +129,11 @@ social:
 highlight_name: true
 ---
 
-I am currently a PhD student in Department of [Electrical and Computer Engineering, CDE](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg). Before that, I worked as a research intern (RA) supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html) in [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn). And before that, I received the B.Eng. degree in Civil Engineering from [School of Civil Engineering](https://www.civil.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn), awarded **Excellent Graduate (优良毕业生)** of THU in June 2023 and supervised by Prof. [Chen GU](http://www.chenguatmit.com/), an MIT alumna. During my undergraduate period, I also worked with Prof. [Jia-Rui LIN](https://linjiarui.net/en/), Prof. [Jing SHI](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya SHEN](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm) and Prof. [Zhenzhong HU](http://www.huzhenzhong.net/). My research interests mainly include medical image inverse problems, computer vision (especially low-level problems) and other apppications of deep learning techniques, such as AI for Healthcare & Science. Due to my unusual experiences mentioned above, I also have a certain interest in disaster prevention and mitigation, especially AI for that.
+I am currently a PhD student in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg). My current research focuses on medical image inverse problems, low-level computer vision, and deep learning methods for healthcare and scientific applications.
+
+Before joining NUS, I worked as a research intern at the [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn), supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html). I received my B.Eng. degree in Civil Engineering from [Tsinghua University](https://www.tsinghua.edu.cn), where I was honored as an **Excellent Graduate (优良毕业生)** in June 2023. Along the way, I had the opportunity to work with Prof. [Chen Gu](http://www.chenguatmit.com/), Prof. [Jia-Rui Lin](https://linjiarui.net/en/), Prof. [Jing Shi](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya Shen](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm), and Prof. [Zhenzhong Hu](http://www.huzhenzhong.net/).
+
+Beyond academia, I am also an independent entrepreneur and a retail trader who uses programming for automated trading. My background spans civil engineering, geophysics, computer vision, and hands-on building, which continues to shape my interest in interdisciplinary AI problems.
 {style="text-align: justify;"}
 
 <!-- After that, I continued to pursue a PhD degree mainly in AI for seismology supervised by Chen in Institute of Disaster Prevention and Mitigation Engineering (IDPME), and quited in January 2024. -->

@@ -3,6 +3,7 @@ title: 'Exploring the Impact of Music on Driving Focus and Emergency Handling Ab
 summary: A study investigated the impact of music with different volumes and languages on driver behavior. Specifically, it examined factors such as reaction time to encountering vehicles running red lights or pedestrians suddenly crossing the road, as well as the ability to maintain a constant vehicle speed. A somewhat counterintuitive finding was that the study discovered that appropriate music might enhance drivers' reaction speed rather than impede them.
 tags:
   - Game Engine
+weight: 1
 date: '2021-12-05T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).

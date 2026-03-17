@@ -47,12 +47,12 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 url_pdf: 'https://arxiv.org/abs/2212.05891'
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: ''
+url_dataset: ''
 # url_poster: ''
 # url_project: ''
 # url_slides: ''
-url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_source: ''
 # url_video: 'https://youtube.com'
 
 # Featured image
