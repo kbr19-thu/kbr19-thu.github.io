@@ -1,5 +1,7 @@
 # IDEs
 .idea/
+.DS_Store
+.ghconfig/
 
 # Hugo
 resources/
@@ -10,3 +12,4 @@ go.sum
 .hugo_build.lock
 .local/
 .venv-image/
+static/fun/worksona/DEPLOY.md

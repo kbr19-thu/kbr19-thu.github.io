@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NMTI 牛马人格测试 | 你是卷王、演王、背锅侠还是精神股东？</title>
+    <meta
+      name="description"
+      content="24道题，测出你的牛马人格。纯娱乐，适合截图发群。"
+    >
+    <meta property="og:title" content="NMTI 牛马人格测试">
+    <meta
+      property="og:description"
+      content="你是卷王、演王、背锅侠还是精神股东？24道题，3分钟出结果。"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="shell">
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button class="lang-button active" id="lang-zh" type="button">中文</button>
+        <button class="lang-button" id="lang-en" type="button">EN</button>
+      </div>
+      <section class="hero" id="hero-screen">
+        <p class="eyebrow" id="hero-eyebrow">NMTI / NIUMA TYPE INDICATOR</p>
+        <h1 id="hero-title">NMTI 牛马人格测试</h1>
+        <p class="hero-copy" id="hero-copy">
+          MBTI 先放一边，NMTI 来了。先看看你在办公室到底是卷王、演王、背锅侠，还是精神股东。
+        </p>
+
+        <div class="hero-cards">
+          <article class="mini-card">
+            <span class="mini-label" id="metric-questions-label">题量</span>
+            <strong id="metric-questions-value">24 题</strong>
+          </article>
+          <article class="mini-card">
+            <span class="mini-label" id="metric-time-label">耗时</span>
+            <strong id="metric-time-value">约 3 分钟</strong>
+          </article>
+          <article class="mini-card">
+            <span class="mini-label" id="metric-tone-label">风格</span>
+            <strong id="metric-tone-value">嘴毒但友好</strong>
+          </article>
+        </div>
+
+        <div class="mode-switch" role="group" aria-label="Quiz length">
+          <button class="mode-button active" id="mode-short" type="button">12 题极速版</button>
+          <button class="mode-button" id="mode-full" type="button">24 题完整版</button>
+        </div>
+
+        <div class="avatar-showcase" aria-hidden="true">
+          <img src="./avatars/boss.svg" alt="">
+          <img src="./avatars/show.svg" alt="">
+          <img src="./avatars/hero.svg" alt="">
+          <img src="./avatars/ghost.svg" alt="">
+        </div>
+
+        <div class="hero-actions">
+          <button class="primary-button" id="start-button" type="button">开始测试</button>
+          <button class="ghost-button" id="jump-result-button" type="button">我想先看结果风格</button>
+        </div>
+
+        <p class="disclaimer" id="disclaimer-text">
+          仅供娱乐，不适用于招聘、绩效、相亲、分手、升职、裁员和人生审判。
+        </p>
+        <p class="plaza-peek" id="plaza-peek">下滑进入牛马广场</p>
+      </section>
+
+      <section class="plaza" id="plaza-screen">
+        <div class="plaza-copy">
+          <p class="eyebrow" id="plaza-eyebrow">NMTI PLAZA / OFFICE CREATURE SQUARE</p>
+          <h2 id="plaza-title">下拉，看看今天的牛马广场</h2>
+          <p class="hero-copy" id="plaza-copy">
+            这里是假装实时运转的办公室平行宇宙。有人在控场，有人在甩锅，有人在摸鱼，有人正在精神参股。
+          </p>
+        </div>
+        <div class="plaza-stage" id="plaza-stage" aria-hidden="true">
+          <div class="plaza-gridlines"></div>
+          <div class="plaza-crowd" id="plaza-crowd"></div>
+          <div class="plaza-dropzone" id="plaza-dropzone">
+            <span class="plaza-drop-kicker" id="plaza-drop-kicker">你的结果会空降到这里</span>
+            <div class="plaza-drop-card" id="plaza-drop-card">
+              <div class="plaza-drop-aura" id="plaza-drop-aura"></div>
+              <img class="plaza-drop-avatar" id="plaza-drop-avatar" src="./avatars/boss.svg" alt="广场主角">
+            </div>
+            <strong class="plaza-drop-title" id="plaza-drop-title">你的牛马分身待命中</strong>
+            <span class="plaza-drop-note" id="plaza-drop-note">测完以后，它会被丢进这堆小人里一起上班。</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz hidden" id="quiz-screen">
+        <div class="quiz-top">
+          <button class="text-button" id="back-home-button" type="button">返回首页</button>
+          <div class="progress-block">
+            <div class="progress-meta">
+              <span id="progress-label">第 1 / 24 题</span>
+              <span id="progress-percent">4%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <article class="question-card">
+          <p class="question-tag" id="question-tag">场景判断</p>
+          <h2 id="question-text">加载中...</h2>
+          <div class="option-list" id="option-list"></div>
+        </article>
+
+        <div class="quiz-footer">
+          <button class="ghost-button" id="prev-button" type="button">上一题</button>
+          <button class="primary-button" id="next-button" type="button">下一题</button>
+        </div>
+      </section>
+
+      <section class="result hidden" id="result-screen">
+        <div class="result-head">
+          <button class="text-button" id="retry-top-button" type="button">重新测试</button>
+          <button class="text-button" id="back-top-button" type="button">回首页</button>
+        </div>
+
+        <article class="result-card" id="result-card">
+          <div class="result-badge" id="result-badge">工位热搜角色</div>
+          <div class="result-hero">
+            <div class="result-drop-trail" id="result-drop-trail" aria-hidden="true"></div>
+            <div class="result-impact-ring" id="result-impact-ring" aria-hidden="true"></div>
+            <div class="result-aura" id="result-aura" aria-hidden="true"></div>
+            <div class="result-emblem" id="result-emblem" aria-hidden="true">!</div>
+            <img class="result-avatar-image" id="result-avatar" src="./avatars/boss.svg" alt="NMTI 类型角色插画">
+            <div class="result-qr-float">
+              <img class="result-qr-image" src="./qr-fun-tujipath.svg" alt="fun.tujipath.com QR code">
+              <span class="result-qr-caption" id="qr-float-text">扫码直达</span>
+            </div>
+            <a class="result-link-chip" href="https://fun.tujipath.com/" target="_blank" rel="noreferrer" id="result-link-chip">官网</a>
+          </div>
+          <p class="result-slogan" id="result-slogan">你的人设已生成，请谨慎发群。</p>
+          <p class="result-kicker" id="result-kicker">你的 NMTI 类型</p>
+          <h2 id="result-title">正在解析你的工位气质</h2>
+          <p class="result-code" id="result-code">WIP</p>
+          <p class="result-summary" id="result-summary"></p>
+          <div class="chip-row" id="result-tags"></div>
+          <div class="result-footerline">
+            <span>NMTI / NIUMA TYPE INDICATOR</span>
+            <span id="result-stamp">办公室民间鉴定版</span>
+          </div>
+        </article>
+
+        <section class="result-grid">
+          <article class="panel">
+            <h3 id="description-heading">一句话解读</h3>
+            <p id="result-description"></p>
+          </article>
+          <article class="panel">
+            <h3 id="coworker-heading">同事视角</h3>
+            <p id="coworker-view"></p>
+          </article>
+        </section>
+
+        <section class="panel">
+          <div class="scores-head">
+            <h3 id="radar-heading">你的工位雷达</h3>
+            <span id="match-rate">匹配度 00%</span>
+          </div>
+          <div class="score-list" id="score-list"></div>
+        </section>
+
+        <section class="panel">
+          <h3 id="note-heading">友情提示</h3>
+          <p id="note-text">
+            结果只是你当下的社畜切面，不是永久人格。睡饱一点、发完奖金、换个老板，结果都可能重算。
+          </p>
+        </section>
+
+        <div class="hero-actions result-actions">
+          <button class="primary-button" id="share-button" type="button">复制分享文案</button>
+          <button class="ghost-button" id="retry-button" type="button">再测一次</button>
+        </div>
+
+        <section class="plaza result-plaza" id="result-plaza-screen">
+          <div class="plaza-copy">
+            <p class="eyebrow" id="result-plaza-eyebrow">NMTI PLAZA / OFFICE CREATURE SQUARE</p>
+            <h2 id="result-plaza-title">你的牛马刚刚被丢进广场</h2>
+            <p class="hero-copy" id="result-plaza-copy">
+              这一刻开始，你的分身已经加入办公室平行宇宙，和别的牛马一起演、卷、背锅、潜水。
+            </p>
+          </div>
+          <div class="plaza-stage" aria-hidden="true">
+            <div class="plaza-gridlines"></div>
+            <div class="plaza-crowd" id="result-plaza-crowd"></div>
+            <div class="plaza-dropzone" id="result-plaza-dropzone">
+              <span class="plaza-drop-kicker" id="result-plaza-drop-kicker">你的结果正在空降</span>
+              <div class="plaza-drop-card" id="result-plaza-drop-card">
+                <div class="plaza-drop-aura" id="result-plaza-drop-aura"></div>
+                <img class="plaza-drop-avatar" id="result-plaza-drop-avatar" src="./avatars/boss.svg" alt="结果页广场主角">
+              </div>
+              <strong class="plaza-drop-title" id="result-plaza-drop-title">你的牛马分身正在落位</strong>
+              <span class="plaza-drop-note" id="result-plaza-drop-note">它现在会直接出现在这页，不用先回首页。</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <div class="plaza-modal hidden" id="plaza-modal" aria-hidden="true">
+        <div class="plaza-modal-backdrop" id="plaza-modal-backdrop"></div>
+        <div class="plaza-modal-card" role="dialog" aria-modal="true" aria-labelledby="plaza-modal-title">
+          <button class="plaza-modal-close" id="plaza-modal-close" type="button">×</button>
+          <img class="plaza-modal-avatar" id="plaza-modal-avatar" src="./avatars/boss.svg" alt="牛马广场角色">
+          <p class="mini-label" id="plaza-modal-kicker">牛马广场围观</p>
+          <h3 id="plaza-modal-title">控场总监</h3>
+          <p class="result-summary" id="plaza-modal-summary"></p>
+          <div class="chip-row" id="plaza-modal-tags"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
