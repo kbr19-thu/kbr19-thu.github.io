@@ -129,7 +129,7 @@ social:
 highlight_name: true
 ---
 
-I am currently a PhD student in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg). My current research focuses on medical image inverse problems, low-level computer vision, and deep learning methods for healthcare and scientific applications.
+I am currently a PhD student in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg), supervised by Prof. Yueming Jin. My current research focuses on medical image inverse problems, low-level computer vision, and deep learning methods for healthcare and scientific applications.
 
 Before joining NUS, I worked as a research intern at the [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn), supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html). I received my B.Eng. degree in Civil Engineering from [Tsinghua University](https://www.tsinghua.edu.cn), where I was honored as an **Excellent Graduate (优良毕业生)** in June 2023. Along the way, I had the opportunity to work with Prof. [Chen Gu](http://www.chenguatmit.com/), Prof. [Jia-Rui Lin](https://linjiarui.net/en/), Prof. [Jing Shi](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya Shen](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm), and Prof. [Zhenzhong Hu](http://www.huzhenzhong.net/).
 
