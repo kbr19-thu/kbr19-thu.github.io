@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: PhD Student
+role: PhD Candidate
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -29,14 +29,13 @@ organizations:
   #   url: https://www.tsinghua.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD student at NUS, independent entrepreneur, and quantitative retail trader working on medical image inverse problems, low-level vision, and deep learning for scientific applications.
+bio: Co-founder and CEO of Autodemia and PhD candidate at NUS, focusing on AI Auto Research and AI Auto Engineering.
 
 # Interests to show in About widget
 interests:
-  - Medical Image Inverse Problems
-  - Low-level Computer Vision
+  - AI Auto Research
+  - AI Auto Engineering
   - AI for Healthcare and Science
-  - Entrepreneurship
   - Algorithmic Trading
 
 # Education to show in About widget
@@ -129,11 +128,11 @@ social:
 highlight_name: true
 ---
 
-I am currently a PhD student in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg), supervised by Prof. [Yueming Jin](https://yuemingjin.github.io/). My current research focuses on medical image inverse problems, low-level computer vision, and deep learning methods for healthcare and scientific applications.
+I am the Co-founder and CEO of [Autodemia](https://autodemia.com), where we are building an AI-native R&D platform with trustworthy cloud resource orchestration. I am also a PhD candidate in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg), supervised by Prof. [Yueming Jin](https://yuemingjin.github.io/). My current research focuses on AI Auto Research and AI Auto Engineering.
 
 Before joining NUS, I worked as a research intern at the [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn), supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html). I received my B.Eng. degree in Civil Engineering from [Tsinghua University](https://www.tsinghua.edu.cn), where I was honored as an **Excellent Graduate (优良毕业生)** in June 2023. Along the way, I had the opportunity to work with Prof. [Chen Gu](http://www.chenguatmit.com/), Prof. [Jia-Rui Lin](https://linjiarui.net/en/), Prof. [Jing Shi](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya Shen](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm), and Prof. [Zhenzhong Hu](http://www.huzhenzhong.net/).
 
-Beyond academia, I am also an independent entrepreneur and a retail trader who uses programming for automated trading. My background spans civil engineering, geophysics, computer vision, and hands-on building, which continues to shape my interest in interdisciplinary AI problems.
+My background spans civil engineering, geophysics, computer vision, and hands-on building, which continues to shape my interest in interdisciplinary AI problems.
 {style="text-align: justify;"}
 
 <!-- After that, I continued to pursue a PhD degree mainly in AI for seismology supervised by Chen in Institute of Disaster Prevention and Mitigation Engineering (IDPME), and quited in January 2024. -->

@@ -228,6 +228,7 @@ sections:
 
         | Role | Date |
         | --- | --- |
+        | Teaching Assistant, *BN5211 Medical Robotic Intelligence*, National University of Singapore | Fall 2026 |
         | Teaching Assistant, *BN5211 Medical Robotic Intelligence*, National University of Singapore | Fall 2025 |
         | Teaching Assistant, *Mathematical Modeling and Data Analysis*, Tsinghua University | Jul 2023 |
         | Teaching Assistant, *Engineering and Computer Graphics*, Tsinghua University | Jul 2023 |
