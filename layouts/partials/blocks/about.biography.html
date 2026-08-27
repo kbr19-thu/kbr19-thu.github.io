@@ -1,0 +1,78 @@
+{{ $block := .wcBlock }}
+{{ $author := $block.content.username | default "admin" }}
+{{ $personPage := site.GetPage (printf "/authors/%s" $author) }}
+{{ $person := $personPage.Params }}
+
+<div class="tech-about">
+  <header class="tech-section-intro" data-reveal>
+    <div class="tech-section-code"><span>01</span> / PROFILE</div>
+    <h2>Biography</h2>
+    <p>From physical systems to autonomous intelligence.</p>
+  </header>
+
+  <div class="tech-bio-grid">
+    <article class="tech-panel tech-bio-copy" data-reveal>
+      <div class="tech-panel-label"><span>IDENTITY.LOG</span><i></i></div>
+      <div class="article-style">{{ $personPage.Content }}</div>
+    </article>
+
+    <aside class="tech-status-stack" data-reveal data-reveal-delay="120">
+      <div class="tech-panel tech-status-panel" data-tilt>
+        <div class="tech-panel-label"><span>CURRENT.STATUS</span><i class="is-live"></i></div>
+        <div class="tech-status-line"><span>ROLE</span><strong>PhD Candidate</strong></div>
+        <div class="tech-status-line"><span>LAB</span><strong>iMVR · NUS</strong></div>
+        <div class="tech-status-line"><span>VENTURE</span><strong>Autodemia</strong></div>
+        <div class="tech-status-line"><span>LOCATION</span><strong>Singapore</strong></div>
+        <div class="tech-status-meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+
+      <div class="tech-panel tech-connect-panel">
+        <div class="tech-panel-label"><span>CONNECT.PORTS</span><i></i></div>
+        <div class="tech-connect-links">
+          {{ range $person.social }}
+            {{ $pack := or .icon_pack "fas" }}
+            {{ $packPrefix := $pack }}
+            {{ if in (slice "fab" "fas" "far" "fal") $pack }}{{ $packPrefix = "fa" }}{{ end }}
+            {{ $link := .link }}
+            {{ $scheme := (urls.Parse $link).Scheme }}
+            {{ if not $scheme }}{{ $link = .link | relLangURL }}{{ end }}
+            <a href="{{ $link | safeURL }}" {{ if in (slice "http" "https") $scheme }}target="_blank" rel="noopener"{{ end }} aria-label="{{ .icon }}">
+              <i class="{{ $pack }} {{ $packPrefix }}-{{ .icon }}" aria-hidden="true"></i><span>{{ upper .icon }}</span>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  {{ with $person.interests }}
+  <div class="tech-subsection-head" data-reveal>
+    <span>RESEARCH MODULES</span><b>04 ACTIVE THREADS</b>
+  </div>
+  <div class="tech-interest-grid">
+    {{ range $index, $interest := . }}
+      {{ $descriptions := slice "Autonomous systems that formulate, execute, and refine scientific inquiry." "Agentic infrastructure that turns engineering intent into reliable execution." "Learning and inverse methods for healthcare, imaging, and scientific discovery." "Data-driven strategies at the intersection of intelligence, markets, and risk." }}
+      <article class="tech-interest-card" data-reveal data-reveal-delay="{{ mul $index 70 }}" data-tilt>
+        <div class="tech-interest-top"><span>0{{ add $index 1 }}</span><i></i></div>
+        <h3>{{ $interest }}</h3>
+        <p>{{ index $descriptions $index }}</p>
+        <div class="tech-interest-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </article>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $person.education }}
+  <div class="tech-subsection-head tech-education-head" data-reveal>
+    <span>ACADEMIC TRAJECTORY</span><b>2019 → NOW</b>
+  </div>
+  <div class="tech-education-track" data-reveal>
+    {{ range $index, $course := .courses }}
+      <article class="tech-education-item">
+        <div class="tech-education-node"><i></i><span>0{{ add $index 1 }}</span></div>
+        <div><time>{{ $course.year }}</time><h3>{{ $course.course }}</h3><p>{{ $course.institution }}</p></div>
+      </article>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

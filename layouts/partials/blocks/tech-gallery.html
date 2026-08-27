@@ -1,0 +1,46 @@
+{{ $images := resources.Match "media/albums/shown/*" }}
+{{ $images = sort $images "Name" "asc" }}
+
+<div class="tech-gallery" data-tech-gallery>
+  <header class="tech-section-intro" data-reveal>
+    <div class="tech-section-code"><span>03</span> / GALLERY</div>
+    <h2>Selected Moments</h2>
+    <p>A compact filmstrip of the people, places, and experiences along the way.</p>
+  </header>
+
+  <div class="tech-gallery-shell" data-reveal data-reveal-delay="100">
+    <div class="tech-gallery-ambient" aria-hidden="true"></div>
+    <div class="tech-gallery-rail" role="listbox" aria-label="Photo gallery" tabindex="0">
+      {{ range $index, $image := $images }}
+        {{ $thumb := $image.Fill "520x680 Center webp q82" }}
+        {{ $filename := path.Base $image.Name }}
+        {{ $stem := strings.TrimSuffix (path.Ext $filename) $filename }}
+        {{ $caption := replaceRE `^[0-9]+_` "" $stem }}
+        <button class="tech-gallery-card" type="button" role="option" aria-selected="false"
+                data-gallery-card data-gallery-index="{{ $index }}"
+                data-gallery-full="{{ $image.RelPermalink }}" data-gallery-caption="{{ $caption }}"
+                aria-label="View {{ $caption }}">
+          <span class="tech-gallery-frame">
+            <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ $caption }}" loading="lazy">
+          </span>
+          <span class="tech-gallery-card-meta">
+            <i>{{ printf "%02d" (add $index 1) }}</i>
+            <b>{{ $caption }}</b>
+          </span>
+        </button>
+      {{ end }}
+    </div>
+
+    <div class="tech-gallery-controls">
+      <button type="button" data-gallery-prev aria-label="Previous photo"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+      <div class="tech-gallery-counter"><span data-gallery-current>01</span><i></i><span>{{ printf "%02d" (len $images) }}</span></div>
+      <button type="button" data-gallery-next aria-label="Next photo"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+    </div>
+    <p class="tech-gallery-hint">Drag, use arrow keys, or select a card</p>
+  </div>
+
+  <div class="tech-gallery-lightbox" data-gallery-lightbox aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo preview">
+    <button type="button" data-gallery-close aria-label="Close photo preview"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <figure><img data-gallery-lightbox-image alt=""><figcaption data-gallery-lightbox-caption></figcaption></figure>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{{ $personPage := site.GetPage "/authors/admin" }}
+<footer class="site-footer tech-site-footer">
+  <div class="tech-footer-main">
+    <a class="tech-footer-brand" href="{{ site.Home.RelPermalink }}" aria-label="Back to homepage">
+      <span>BK</span><strong>Borui Kang</strong>
+    </a>
+    <p>Researcher · Builder · Founder</p>
+    <nav aria-label="Footer links">
+      <a href="mailto:borui.kang@u.nus.edu">Email</a>
+      <a href="https://github.com/kbr19-thu" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/borui-kang-91943226a" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+  <div class="tech-footer-meta">
+    <span>© {{ now.Year }} Borui Kang</span>
+    <span>Singapore · {{ now.Format "2006" }}</span>
+  </div>
+</footer>

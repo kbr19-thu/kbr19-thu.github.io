@@ -1,0 +1,47 @@
+{{ $block := .wcBlock }}
+{{ $author := $block.content.username | default "admin" }}
+{{ $personPage := site.GetPage (printf "/authors/%s" $author) }}
+
+<div class="tech-footprint">
+  <header class="tech-section-intro" data-reveal>
+    <div class="tech-section-code"><span>02</span> / ACADEMIC NETWORK</div>
+    <h2>Global Academic Footprint</h2>
+    <p>Ideas move through people, institutions, and places.</p>
+  </header>
+
+  <div class="tech-footprint-grid">
+    <div class="tech-footprint-copy" data-reveal>
+      <div class="tech-footprint-stat"><strong>07+</strong><span>INSTITUTIONS<br>VISITED</span></div>
+      <p>During my undergraduate studies, I was invited to visit and deliver academic presentations at leading institutions across the United States and Europe.</p>
+      <div class="tech-route-legend"><i></i><span>ACADEMIC VISIT / PRESENTATION</span></div>
+      <div class="tech-route-legend"><i class="is-origin"></i><span>ACADEMIC BASE</span></div>
+    </div>
+
+    <div class="tech-network-map" data-reveal data-reveal-delay="120" role="img" aria-label="Academic visits connecting Tsinghua University with MIT, UC Berkeley, Stanford, Purdue, UIUC, Columbia University, and ENS Paris">
+      <div class="tech-map-grid" aria-hidden="true"></div>
+      <span class="tech-map-region tech-map-us">UNITED STATES</span>
+      <span class="tech-map-region tech-map-eu">EUROPE</span>
+      <span class="tech-map-region tech-map-asia">ASIA</span>
+      <svg class="tech-route-lines" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M820 240 Q500 20 120 290" />
+        <path d="M820 240 Q520 40 140 230" />
+        <path d="M820 240 Q570 95 260 250" />
+        <path d="M820 240 Q560 135 250 310" />
+        <path d="M820 240 Q610 75 350 220" />
+        <path d="M820 240 Q650 15 380 160" />
+        <path d="M820 240 Q700 120 530 250" />
+        <path class="tech-route-current" d="M820 240 Q900 330 780 390" />
+      </svg>
+      <span class="tech-map-node node-stanford"><i></i><b>Stanford</b></span>
+      <span class="tech-map-node node-berkeley"><i></i><b>UC Berkeley</b></span>
+      <span class="tech-map-node node-purdue"><i></i><b>Purdue</b></span>
+      <span class="tech-map-node node-uiuc"><i></i><b>UIUC</b></span>
+      <span class="tech-map-node node-columbia"><i></i><b>Columbia</b></span>
+      <span class="tech-map-node node-mit"><i></i><b>MIT</b></span>
+      <span class="tech-map-node node-ens"><i></i><b>ENS Paris</b></span>
+      <span class="tech-map-node node-tsinghua is-origin"><i></i><b>Tsinghua</b></span>
+      <span class="tech-map-node node-nus is-current"><i></i><b>NUS</b></span>
+      <div class="tech-map-readout"><span>NETWORK STATUS</span><b>CONNECTED</b></div>
+    </div>
+  </div>
+</div>

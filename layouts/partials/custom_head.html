@@ -1,0 +1,9 @@
+{{ if .IsHome }}
+  <script>document.documentElement.classList.add('bk-tech');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {{ $style := resources.Get "css/tech-home.css" | minify | fingerprint "sha256" }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  <meta name="theme-color" content="#07090f">
+{{ end }}

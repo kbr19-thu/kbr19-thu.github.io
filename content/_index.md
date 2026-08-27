@@ -5,11 +5,21 @@ date: 2022-10-24
 type: landing
 
 sections:
+  - block: tech-hero
+    id: home
+    content:
+      username: admin
+    design:
+      css_class: tech-hero-section
   - block: about.biography
     id: about
     content:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
+      username: admin
+  - block: tech-footprint
+    id: footprint
+    content:
       username: admin
   # - block: experience
   #   content:
@@ -255,15 +265,10 @@ sections:
         | Blood donor, 6 donations | Sep 2019-Present |
     design:
       columns: '1'
-  - block: markdown
+  - block: tech-gallery
     id: gallery
     content:
       title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="shown" >}}
-    design:
-      columns: '1'
   # - block: tag_cloud
   #   content:
   #     title: Popular Topics

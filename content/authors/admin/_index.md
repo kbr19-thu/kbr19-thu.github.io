@@ -38,6 +38,23 @@ interests:
   - AI for Healthcare and Science
   - Algorithmic Trading
 
+# Selected academic visits used by the interactive homepage footprint.
+academic_visits:
+  - name: Stanford
+    city: Stanford
+  - name: UC Berkeley
+    city: Berkeley
+  - name: Purdue
+    city: West Lafayette
+  - name: UIUC
+    city: Urbana-Champaign
+  - name: Columbia
+    city: New York
+  - name: MIT
+    city: Cambridge
+  - name: ENS Paris
+    city: Paris
+
 # Education to show in About widget
 education:
   courses:
@@ -108,27 +125,18 @@ social:
   #   label: Follow me on Twitter
   #   display:
   #     header: ture
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.com/citations?hl=en&user=IvujOgYAAAAJ
   - icon: github
     icon_pack: fab
     link: https://github.com/kbr19-thu
   - icon: linkedin
     icon_pack: fab
     link: https://linkedin.com/in/borui-kang-91943226a
-  # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
-  # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/Borui_Kang_CV.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-I am the Co-founder and CEO of [Autodemia](https://autodemia.com), where we are building an AI-native R&D platform with trustworthy cloud resource orchestration. I am also a PhD candidate in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg), supervised by Prof. [Yueming Jin](https://yuemingjin.github.io/). My current research focuses on AI Auto Research and AI Auto Engineering.
+I am the Co-founder and CEO of [Autodemia](https://autodemia.com), an AI R&D company developing trustworthy infrastructure for research and engineering. I am also a PhD candidate in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg), supervised by Prof. [Yueming Jin](https://yuemingjin.github.io/). My current research focuses on AI Auto Research and AI Auto Engineering.
 
 Before joining NUS, I worked as a research intern at the [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn), supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html). I received my B.Eng. degree in Civil Engineering from [Tsinghua University](https://www.tsinghua.edu.cn), where I was honored as an **Excellent Graduate (优良毕业生)** in June 2023. During my undergraduate studies, I was invited to visit and deliver academic presentations at MIT, UC Berkeley, Stanford University, Purdue University, UIUC, Columbia University, and École Normale Supérieure in Paris, among other institutions. Along the way, I had the opportunity to work with Prof. [Chen Gu](http://www.chenguatmit.com/), Prof. [Jia-Rui Lin](https://linjiarui.net/en/), Prof. [Jing Shi](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya Shen](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm), and Prof. [Zhenzhong Hu](http://www.huzhenzhong.net/).
 

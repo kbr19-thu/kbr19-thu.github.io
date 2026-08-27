@@ -5,32 +5,20 @@
 
 main:
   - name: Home
-    url: '#about'
+    url: '#home'
     weight: 10
-  - name: News
-    url: '#news'
-    weight: 15  
+  - name: Profile
+    url: '#about'
+    weight: 15
   - name: Publications
     url: '#featured'
     weight: 20
-  - name: Talks
-    url: '#talks'
-    weight: 30
   - name: Projects
     url: '#projects'
-    weight: 40
-  - name: Honors and Awards
+    weight: 30
+  - name: Honors
     url: '#honors'
-    weight: 50
-  - name: Gallery
-    url: '#gallery'
-    weight: 60
+    weight: 40
   - name: Contact
     url: '#contact'
-    weight: 70
-
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
-  - name: CV
-    url: uploads/Borui_Kang_CV.pdf
-    weight: 80
+    weight: 50

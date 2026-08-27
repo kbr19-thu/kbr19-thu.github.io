@@ -1,0 +1,4 @@
+{{ if .IsHome }}
+  {{ $script := resources.Get "js/tech-home.js" | js.Build (dict "format" "iife" "target" "es2018" "minify" true) | fingerprint "sha256" }}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+{{ end }}
