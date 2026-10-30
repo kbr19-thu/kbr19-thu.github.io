@@ -1,6 +1,7 @@
 ---
 title: I developed NMTI, a playful office-personality quiz
 date: '2026-04-10'
+draft: true
 summary: Developed NMTI, a playful personality quiz about office archetypes, and published it online.
 tags:
   - Side Project

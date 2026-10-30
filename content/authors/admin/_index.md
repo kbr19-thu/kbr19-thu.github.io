@@ -29,7 +29,7 @@ organizations:
   #   url: https://www.tsinghua.edu.cn
 
 # Short bio (displayed in user profile at end of posts)
-bio: Co-founder and CEO of Autodemia and PhD candidate at NUS, focusing on AI Auto Research and AI Auto Engineering.
+bio: Co-founder and CTO of Autodemia and PhD candidate at NUS, focusing on AI Auto Research and AI Auto Engineering.
 
 # Interests to show in About widget
 interests:
@@ -54,6 +54,10 @@ academic_visits:
     city: Cambridge
   - name: ENS Paris
     city: Paris
+  - name: Kyoto Univ.
+    city: Kyoto
+  - name: Tohoku Univ.
+    city: Sendai
 
 # Education to show in About widget
 education:
@@ -136,9 +140,9 @@ social:
 highlight_name: true
 ---
 
-I am the Co-founder and CEO of [Autodemia](https://autodemia.com), an AI R&D company developing trustworthy infrastructure for research and engineering. I am also a PhD candidate in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg), supervised by Prof. [Yueming Jin](https://yuemingjin.github.io/). My current research focuses on AI Auto Research and AI Auto Engineering.
+I am the Co-founder and CTO of [Autodemia](https://autodemia.com), an AI R&D company developing trustworthy infrastructure for research and engineering. I am also a PhD candidate in the Department of [Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://www.nus.edu.sg), supervised by Prof. [Yueming Jin](https://yuemingjin.github.io/). My current research focuses on AI Auto Research and AI Auto Engineering.
 
-Before joining NUS, I worked as a research intern at the [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn), supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html). I received my B.Eng. degree in Civil Engineering from [Tsinghua University](https://www.tsinghua.edu.cn), where I was honored as an **Excellent Graduate (优良毕业生)** in June 2023. During my undergraduate studies, I was invited to visit and deliver academic presentations at MIT, UC Berkeley, Stanford University, Purdue University, UIUC, Columbia University, and École Normale Supérieure in Paris, among other institutions. Along the way, I had the opportunity to work with Prof. [Chen Gu](http://www.chenguatmit.com/), Prof. [Jia-Rui Lin](https://linjiarui.net/en/), Prof. [Jing Shi](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya Shen](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm), and Prof. [Zhenzhong Hu](http://www.huzhenzhong.net/).
+Before joining NUS, I worked as a research intern at the [Wangxuan Institute of Computer Technology](https://www.icst.pku.edu.cn/index.htm), [Peking University](https://www.pku.edu.cn), supervised by Prof. [Jiaying Liu](http://39.96.165.147/people/liujiaying.html). I received my B.Eng. degree in Civil Engineering from [Tsinghua University](https://www.tsinghua.edu.cn), supervised by Prof. [Chen Gu](http://www.chenguatmit.com/), where I was honored as an **Excellent Graduate (优良毕业生)** in June 2023. During my undergraduate studies, I was invited to visit and deliver academic presentations at MIT, UC Berkeley, Stanford University, Purdue University, UIUC, Columbia University, École Normale Supérieure in Paris, Kyoto University, and Tohoku University, among other institutions. Along the way, I also had the opportunity to work with Prof. [Jia-Rui Lin](https://linjiarui.net/en/), Prof. [Jing Shi](https://www.civil.tsinghua.edu.cn/ce/info/1135/1870.htm), Prof. [Enya Shen](https://www.thss.tsinghua.edu.cn/faculty/shenenya.htm), and Prof. [Zhenzhong Hu](http://www.huzhenzhong.net/).
 
 My background spans civil engineering, geophysics, computer vision, and hands-on building, which continues to shape my interest in interdisciplinary AI problems.
 {style="text-align: justify;"}

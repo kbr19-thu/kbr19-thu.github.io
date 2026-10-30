@@ -3,9 +3,44 @@
 
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* 1. Unify all built-in Hugo Blox section headers with numbered badges */
+  function setupUnifiedSectionHeaders() {
+    const sectionMeta = {
+      news: { code: "02", label: "UPDATES" },
+      featured: { code: "03", label: "PUBLICATIONS", subtitle: "Selected peer-reviewed research and technical contributions." },
+      talks: { code: "04", label: "TALKS & POSTERS", subtitle: "Invited presentations and conference posters." },
+      projects: { code: "05", label: "PROJECTS", subtitle: "Selected systems, simulation platforms, and engineering prototypes." },
+      honors: { code: "06", label: "DISTINCTIONS", subtitle: "Academic scholarships, competition awards, and university honors." },
+      service: { code: "07", label: "ACADEMIC SERVICE", subtitle: "Teaching assistantships, student leadership, and community service." },
+      contact: { code: "09", label: "CONTACT", subtitle: "Get in touch for research collaboration, venture inquiries, or academic exchange." },
+    };
+
+    Object.entries(sectionMeta).forEach(([id, meta]) => {
+      const section = document.getElementById(id);
+      if (!section) return;
+      const heading = section.querySelector(".section-heading");
+      if (!heading || heading.querySelector(".bk-section-badge")) return;
+
+      const badge = document.createElement("div");
+      badge.className = "bk-section-badge";
+      badge.innerHTML = `<b>${meta.code}</b> / ${meta.label}`;
+      heading.insertBefore(badge, heading.firstChild);
+
+      if (meta.subtitle && !heading.querySelector("p")) {
+        const sub = document.createElement("p");
+        sub.textContent = meta.subtitle;
+        heading.appendChild(sub);
+      }
+    });
+  }
+
+  /* 2. Scroll reveal animations */
   function setupReveal() {
-    const items = document.querySelectorAll("[data-reveal]");
+    const items = document.querySelectorAll("[data-reveal], .home-section .section-heading, .home-section .card, .home-section .media.stream-item, #projects .view-showcase");
     items.forEach((item) => {
+      if (!item.hasAttribute("data-reveal")) {
+        item.setAttribute("data-reveal", "");
+      }
       const delay = Number(item.dataset.revealDelay || 0);
       item.style.setProperty("--reveal-delay", `${delay}ms`);
     });
@@ -20,49 +55,60 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: "0px 0px -6%" });
+    }, { threshold: 0.08, rootMargin: "0px 0px -4%" });
     items.forEach((item) => observer.observe(item));
   }
 
+  /* 3. Smooth spring-damped micro-tilt & cursor spotlight */
   function setupTilt() {
     if (reducedMotion || !window.matchMedia("(pointer:fine)").matches) return;
-    document.querySelectorAll("[data-tilt]").forEach((card) => {
+    const cards = document.querySelectorAll("[data-tilt], .bk-tech .card, .bk-tech .media.stream-item, .bk-tech #projects .view-showcase");
+
+    cards.forEach((card) => {
+      const isPortrait = card.classList.contains("tech-portrait-shell");
+      const maxAngle = isPortrait ? 2.4 : 1.6;
+      let targetRx = 0;
+      let targetRy = 0;
+      let currentRx = 0;
+      let currentRy = 0;
+      let rafId = 0;
+
+      const update = () => {
+        currentRx += (targetRx - currentRx) * 0.14;
+        currentRy += (targetRy - currentRy) * 0.14;
+        card.style.setProperty("--rx", `${currentRx.toFixed(3)}deg`);
+        card.style.setProperty("--ry", `${currentRy.toFixed(3)}deg`);
+        if (Math.abs(targetRx - currentRx) > 0.01 || Math.abs(targetRy - currentRy) > 0.01) {
+          rafId = requestAnimationFrame(update);
+        } else {
+          rafId = 0;
+        }
+      };
+
       card.addEventListener("pointermove", (event) => {
         const rect = card.getBoundingClientRect();
         const x = (event.clientX - rect.left) / rect.width;
         const y = (event.clientY - rect.top) / rect.height;
-        card.style.setProperty("--ry", `${(x - 0.5) * 8}deg`);
-        card.style.setProperty("--rx", `${(0.5 - y) * 7}deg`);
-        card.style.setProperty("--mx", `${x * 100}%`);
-        card.style.setProperty("--my", `${y * 100}%`);
-      });
+        card.style.setProperty("--mx", `${(x * 100).toFixed(1)}%`);
+        card.style.setProperty("--my", `${(y * 100).toFixed(1)}%`);
+        if (card.hasAttribute("data-tilt")) {
+          targetRy = (x - 0.5) * maxAngle * 2;
+          targetRx = (0.5 - y) * maxAngle * 2;
+          if (!rafId) rafId = requestAnimationFrame(update);
+        }
+      }, { passive: true });
+
       card.addEventListener("pointerleave", () => {
-        card.style.setProperty("--ry", "0deg");
-        card.style.setProperty("--rx", "0deg");
+        if (card.hasAttribute("data-tilt")) {
+          targetRx = 0;
+          targetRy = 0;
+          if (!rafId) rafId = requestAnimationFrame(update);
+        }
       });
     });
   }
 
-  function setupCursorGlow() {
-    if (reducedMotion || !window.matchMedia("(pointer:fine)").matches) return;
-    const glow = document.createElement("div");
-    glow.className = "tech-cursor-glow";
-    glow.setAttribute("aria-hidden", "true");
-    document.body.appendChild(glow);
-    let x = -500;
-    let y = -500;
-    let tx = x;
-    let ty = y;
-    window.addEventListener("pointermove", (event) => { tx = event.clientX; ty = event.clientY; }, { passive: true });
-    const move = () => {
-      x += (tx - x) * 0.12;
-      y += (ty - y) * 0.12;
-      glow.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-      requestAnimationFrame(move);
-    };
-    requestAnimationFrame(move);
-  }
-
+  /* 4. Subtle navbar dock hover response */
   function setupDock() {
     const dock = document.querySelector("#navbar-main");
     if (!dock || reducedMotion || !window.matchMedia("(pointer:fine)").matches) return;
@@ -72,11 +118,11 @@
         const rect = link.getBoundingClientRect();
         const center = rect.left + rect.width / 2;
         const distance = Math.abs(event.clientX - center);
-        const influence = Math.max(0, 1 - distance / 135);
-        link.style.setProperty("--dock-scale", (1 + influence * 0.08).toFixed(3));
-        link.style.setProperty("--dock-lift", `${(-influence * 2.5).toFixed(1)}px`);
+        const influence = Math.max(0, 1 - distance / 120);
+        link.style.setProperty("--dock-scale", (1 + influence * 0.04).toFixed(3));
+        link.style.setProperty("--dock-lift", `${(-influence * 1.5).toFixed(1)}px`);
       });
-    });
+    }, { passive: true });
     dock.addEventListener("pointerleave", () => {
       links.forEach((link) => {
         link.style.setProperty("--dock-scale", "1");
@@ -85,6 +131,7 @@
     });
   }
 
+  /* 5. Active section navigation highlighting */
   function setupActiveNavigation() {
     const links = [...document.querySelectorAll("#navbar-main a[data-target]")];
     const map = new Map();
@@ -99,10 +146,11 @@
       if (!visible) return;
       links.forEach((link) => link.classList.remove("is-section-active"));
       map.get(visible.target)?.classList.add("is-section-active");
-    }, { rootMargin: "-28% 0px -58%", threshold: [0, 0.1, 0.3] });
+    }, { rootMargin: "-25% 0px -55%", threshold: [0, 0.1, 0.25] });
     map.forEach((_, section) => observer.observe(section));
   }
 
+  /* 6. Multi-depth ambient aurora & constellation field */
   function setupHeroField() {
     const canvas = document.querySelector("#tech-field");
     const hero = document.querySelector(".tech-hero");
@@ -113,10 +161,10 @@
     let width = 0;
     let height = 0;
     let dpr = 1;
-    let particles = [];
+    let nodes = [];
     let frame = 0;
     let running = true;
-    const pointer = { x: 0.66, y: 0.46, active: false };
+    const pointer = { x: 0.62, y: 0.45, tx: 0.62, ty: 0.45 };
 
     function resize() {
       const rect = hero.getBoundingClientRect();
@@ -128,17 +176,19 @@
       canvas.style.width = `${width}px`;
       canvas.style.height = `${height}px`;
       context.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const count = Math.min(118, Math.max(58, Math.round(width / 12)));
-      particles = Array.from({ length: count }, (_, index) => {
-        const sideBias = index / count;
+
+      const count = Math.min(64, Math.max(36, Math.round(width / 22)));
+      nodes = Array.from({ length: count }, (_, idx) => {
+        const depth = 0.35 + (idx % 3) * 0.32; // 3 depth layers
         return {
-          x: Math.random() * width,
-          y: height * (0.18 + Math.random() * 0.68),
-          vx: (Math.random() - 0.5) * 0.14,
-          vy: (Math.random() - 0.5) * 0.11,
-          r: 0.45 + Math.random() * 1.15,
+          baseX: Math.random() * width,
+          baseY: height * (0.1 + Math.random() * 0.8),
+          vx: (Math.random() - 0.5) * 0.09 * depth,
+          vy: (Math.random() - 0.5) * 0.07 * depth,
+          r: (0.7 + Math.random() * 1.1) * depth,
+          depth,
           phase: Math.random() * Math.PI * 2,
-          band: Math.sin(sideBias * Math.PI) * 0.7 + 0.3,
+          hue: idx % 4 === 0 ? "154, 124, 255" : "98, 232, 255",
         };
       });
       draw(0);
@@ -146,70 +196,92 @@
 
     function draw(time) {
       context.clearRect(0, 0, width, height);
+
+      pointer.x += (pointer.tx - pointer.x) * 0.05;
+      pointer.y += (pointer.ty - pointer.y) * 0.05;
+
       const px = pointer.x * width;
       const py = pointer.y * height;
-      const glow = context.createRadialGradient(px, py, 0, px, py, Math.max(width, height) * 0.35);
-      glow.addColorStop(0, "rgba(130, 92, 255, 0.10)");
-      glow.addColorStop(0.42, "rgba(65, 187, 255, 0.045)");
-      glow.addColorStop(1, "rgba(0, 0, 0, 0)");
-      context.fillStyle = glow;
+
+      // Soft ambient aurora plumes
+      const aura1 = context.createRadialGradient(px, py, 0, px, py, Math.max(width, height) * 0.42);
+      aura1.addColorStop(0, "rgba(98, 232, 255, 0.07)");
+      aura1.addColorStop(0.45, "rgba(130, 96, 255, 0.04)");
+      aura1.addColorStop(1, "rgba(0, 0, 0, 0)");
+      context.fillStyle = aura1;
+      context.fillRect(0, 0, width, height);
+
+      const driftX = width * (0.28 + Math.sin(time * 0.0002) * 0.05);
+      const driftY = height * (0.52 + Math.cos(time * 0.00018) * 0.05);
+      const aura2 = context.createRadialGradient(driftX, driftY, 0, driftX, driftY, Math.max(width, height) * 0.36);
+      aura2.addColorStop(0, "rgba(98, 232, 255, 0.045)");
+      aura2.addColorStop(1, "rgba(0, 0, 0, 0)");
+      context.fillStyle = aura2;
       context.fillRect(0, 0, width, height);
 
       context.save();
       context.globalCompositeOperation = "screen";
-      for (let i = 0; i < particles.length; i += 1) {
-        const p = particles[i];
+
+      // Update positions with smooth parallax
+      const parallaxX = (pointer.x - 0.5) * -28;
+      const parallaxY = (pointer.y - 0.5) * -20;
+
+      for (let i = 0; i < nodes.length; i += 1) {
+        const n = nodes[i];
         if (!reducedMotion) {
-          p.x += p.vx + Math.sin(time * 0.00016 + p.phase) * 0.035;
-          p.y += p.vy + Math.cos(time * 0.00014 + p.phase) * 0.025;
-          if (p.x < -30) p.x = width + 30;
-          if (p.x > width + 30) p.x = -30;
-          if (p.y < height * 0.1) p.y = height * 0.86;
-          if (p.y > height * 0.9) p.y = height * 0.14;
-          if (pointer.active) {
-            const dx = p.x - px;
-            const dy = p.y - py;
-            const dist = Math.hypot(dx, dy) || 1;
-            if (dist < 150) {
-              const force = (1 - dist / 150) * 0.12;
-              p.x += (dx / dist) * force;
-              p.y += (dy / dist) * force;
-            }
-          }
+          n.baseX += n.vx + Math.sin(time * 0.0002 + n.phase) * 0.04;
+          n.baseY += n.vy + Math.cos(time * 0.00018 + n.phase) * 0.03;
+          if (n.baseX < -40) n.baseX = width + 40;
+          if (n.baseX > width + 40) n.baseX = -40;
+          if (n.baseY < 0) n.baseY = height;
+          if (n.baseY > height) n.baseY = 0;
         }
-        for (let j = i + 1; j < particles.length; j += 1) {
-          const q = particles[j];
-          const dx = p.x - q.x;
-          const dy = p.y - q.y;
-          const distance = Math.hypot(dx, dy);
-          if (distance < 92) {
-            const alpha = (1 - distance / 92) * 0.13 * Math.min(p.band, q.band);
-            context.strokeStyle = `rgba(109, 190, 255, ${alpha})`;
-            context.lineWidth = 0.55;
+        n.x = n.baseX + parallaxX * n.depth;
+        n.y = n.baseY + parallaxY * n.depth;
+      }
+
+      // Draw delicate filaments between nearby nodes of similar depth
+      const maxDist = 115;
+      for (let i = 0; i < nodes.length; i += 1) {
+        const a = nodes[i];
+        if (a.depth < 0.5) continue;
+        for (let j = i + 1; j < nodes.length; j += 1) {
+          const b = nodes[j];
+          if (b.depth < 0.5) continue;
+          const dx = a.x - b.x;
+          const dy = a.y - b.y;
+          const dist = Math.hypot(dx, dy);
+          if (dist < maxDist) {
+            const alpha = Math.pow(1 - dist / maxDist, 1.6) * 0.11 * Math.min(a.depth, b.depth);
+            context.strokeStyle = `rgba(120, 200, 255, ${alpha.toFixed(3)})`;
+            context.lineWidth = 0.6;
             context.beginPath();
-            context.moveTo(p.x, p.y);
-            context.lineTo(q.x, q.y);
+            context.moveTo(a.x, a.y);
+            context.lineTo(b.x, b.y);
             context.stroke();
           }
         }
-        const shimmer = 0.45 + Math.sin(time * 0.0012 + p.phase) * 0.3;
-        context.fillStyle = `rgba(${p.x > width * 0.55 ? "157,124,255" : "98,232,255"}, ${Math.max(0.12, shimmer)})`;
+      }
+
+      // Draw soft glowing nodes
+      for (let i = 0; i < nodes.length; i += 1) {
+        const n = nodes[i];
+        const pulse = 0.4 + Math.sin(time * 0.0014 + n.phase) * 0.25;
+        const alpha = Math.max(0.12, pulse * n.depth);
+
+        if (n.depth > 0.8) {
+          context.fillStyle = `rgba(${n.hue}, ${(alpha * 0.22).toFixed(3)})`;
+          context.beginPath();
+          context.arc(n.x, n.y, n.r * 3.2, 0, Math.PI * 2);
+          context.fill();
+        }
+
+        context.fillStyle = `rgba(${n.hue}, ${alpha.toFixed(3)})`;
         context.beginPath();
-        context.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        context.arc(n.x, n.y, n.r, 0, Math.PI * 2);
         context.fill();
       }
-      context.restore();
 
-      context.save();
-      context.translate(width * 0.7, height * 0.47);
-      context.rotate(-0.08);
-      for (let i = 0; i < 4; i += 1) {
-        context.strokeStyle = `rgba(125, 102, 255, ${0.055 - i * 0.008})`;
-        context.lineWidth = 1;
-        context.beginPath();
-        context.ellipse(0, 0, width * (0.17 + i * 0.035), height * (0.1 + i * 0.018), 0, 0, Math.PI * 2);
-        context.stroke();
-      }
       context.restore();
     }
 
@@ -220,11 +292,9 @@
 
     hero.addEventListener("pointermove", (event) => {
       const rect = hero.getBoundingClientRect();
-      pointer.x = (event.clientX - rect.left) / rect.width;
-      pointer.y = (event.clientY - rect.top) / rect.height;
-      pointer.active = true;
+      pointer.tx = (event.clientX - rect.left) / rect.width;
+      pointer.ty = (event.clientY - rect.top) / rect.height;
     }, { passive: true });
-    hero.addEventListener("pointerleave", () => { pointer.active = false; });
     window.addEventListener("resize", resize, { passive: true });
 
     if ("IntersectionObserver" in window) {
@@ -239,6 +309,7 @@
     if (!reducedMotion) frame = requestAnimationFrame(animate);
   }
 
+  /* 7. Refined 5-card 3D Gallery with trackpad wheel & viewport-aware autoplay */
   function setupGallery() {
     const root = document.querySelector("[data-tech-gallery]");
     if (!root) return;
@@ -253,10 +324,12 @@
     const close = root.querySelector("[data-gallery-close]");
     if (!rail || !cards.length) return;
 
-    let active = Math.min(1, cards.length - 1);
+    let active = 0;
     let dragStart = null;
     let idleTimer = 0;
     let idlePaused = false;
+    let inViewport = false;
+    let wheelCooldown = 0;
 
     const wrappedDifference = (index) => {
       let difference = index - active;
@@ -268,11 +341,12 @@
 
     const render = () => {
       const narrow = root.getBoundingClientRect().width < 700;
-      const spacing = narrow ? 100 : 142;
+      const spacing = narrow ? 125 : 195;
+      const maxVisible = narrow ? 2 : 3;
       cards.forEach((card, index) => {
         const difference = wrappedDifference(index);
         const distance = Math.abs(difference);
-        const visible = distance <= (narrow ? 3 : 5);
+        const visible = distance <= maxVisible;
         card.hidden = !visible;
         card.classList.toggle("is-active", difference === 0);
         card.setAttribute("aria-selected", String(difference === 0));
@@ -280,11 +354,11 @@
         if (!visible) return;
         const direction = Math.sign(difference);
         const x = difference * spacing;
-        const y = -50 + distance * 1.8;
-        const z = -distance * (narrow ? 105 : 125);
-        const rotate = -direction * Math.min(21, distance * 7.5);
-        const scale = Math.max(0.62, 1 - distance * 0.075);
-        const opacity = Math.max(0.12, 1 - distance * 0.16);
+        const y = -50 + distance * 1.2;
+        const z = -distance * (narrow ? 90 : 110);
+        const rotate = -direction * Math.min(12, distance * 5.5);
+        const scale = Math.max(0.72, 1 - distance * 0.085);
+        const opacity = distance === 0 ? 1 : Math.max(0.18, 0.88 - (distance - 1) * 0.28);
         card.style.setProperty("--gallery-x", `${x}px`);
         card.style.setProperty("--gallery-y", `${y}%`);
         card.style.setProperty("--gallery-z", `${z}px`);
@@ -339,6 +413,17 @@
     });
     document.addEventListener("keydown", (event) => { if (event.key === "Escape" && lightbox?.classList.contains("is-open")) closeLightbox(); });
 
+    rail.addEventListener("wheel", (event) => {
+      if (Math.abs(event.deltaX) > Math.abs(event.deltaY) && Math.abs(event.deltaX) > 12) {
+        event.preventDefault();
+        const now = Date.now();
+        if (now - wheelCooldown > 260) {
+          wheelCooldown = now;
+          select(active + (event.deltaX > 0 ? 1 : -1));
+        }
+      }
+    }, { passive: false });
+
     rail.addEventListener("pointerdown", (event) => {
       dragStart = { x: event.clientX, id: event.pointerId };
       rail.setPointerCapture?.(event.pointerId);
@@ -346,7 +431,7 @@
     rail.addEventListener("pointerup", (event) => {
       if (!dragStart || dragStart.id !== event.pointerId) return;
       const distance = event.clientX - dragStart.x;
-      if (Math.abs(distance) > 38) select(active + (distance < 0 ? 1 : -1));
+      if (Math.abs(distance) > 36) select(active + (distance < 0 ? 1 : -1));
       dragStart = null;
     });
     rail.addEventListener("pointercancel", () => { dragStart = null; });
@@ -357,8 +442,17 @@
     root.addEventListener("pointerleave", resume);
     root.addEventListener("focusin", pause);
     root.addEventListener("focusout", resume);
+
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(([entry]) => {
+        inViewport = entry.isIntersecting;
+      }, { threshold: 0.25 }).observe(root);
+    }
+
     if (!reducedMotion) {
-      idleTimer = window.setInterval(() => { if (!idlePaused && !document.hidden) select(active + 1); }, 4200);
+      idleTimer = window.setInterval(() => {
+        if (inViewport && !idlePaused && !document.hidden) select(active + 1);
+      }, 5500);
     }
     window.addEventListener("resize", render, { passive: true });
     window.addEventListener("pagehide", () => window.clearInterval(idleTimer), { once: true });
@@ -366,9 +460,9 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    setupUnifiedSectionHeaders();
     setupReveal();
     setupTilt();
-    setupCursorGlow();
     setupDock();
     setupActiveNavigation();
     setupHeroField();

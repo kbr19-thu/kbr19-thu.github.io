@@ -7,8 +7,6 @@
 <div class="tech-hero">
   <canvas id="tech-field" class="tech-field" aria-hidden="true"></canvas>
   <div class="tech-hero-noise" aria-hidden="true"></div>
-  <div class="tech-hero-orbit tech-hero-orbit-a" aria-hidden="true"></div>
-  <div class="tech-hero-orbit tech-hero-orbit-b" aria-hidden="true"></div>
 
   <div class="tech-hero-inner">
     <div class="tech-hero-copy" data-reveal>
@@ -32,7 +30,7 @@
       <div class="tech-role-row">
         <a class="tech-role-chip" href="https://autodemia.com" target="_blank" rel="noopener">
           <span class="tech-chip-index">01</span>
-          <span><b>Co-founder &amp; CEO</b><small>Autodemia</small></span>
+          <span><b>Co-founder &amp; CTO</b><small>Autodemia</small></span>
         </a>
         <a class="tech-role-chip" href="https://www.nus.edu.sg" target="_blank" rel="noopener">
           <span class="tech-chip-index">02</span>
@@ -44,11 +42,6 @@
 
     <div class="tech-hero-visual" data-reveal data-reveal-delay="180">
       <div class="tech-portrait-shell" data-tilt>
-        <div class="tech-corner tech-corner-tl"></div>
-        <div class="tech-corner tech-corner-tr"></div>
-        <div class="tech-corner tech-corner-bl"></div>
-        <div class="tech-corner tech-corner-br"></div>
-        <div class="tech-portrait-scan" aria-hidden="true"></div>
         {{ with $avatar }}
           {{ $portrait := .Fill "720x820 Center webp" }}
           <img src="{{ $portrait.RelPermalink }}" width="{{ $portrait.Width }}" height="{{ $portrait.Height }}" alt="{{ $personPage.Title }}">
